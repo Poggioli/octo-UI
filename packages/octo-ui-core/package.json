@@ -1,0 +1,8 @@
+{
+  "name": "@octo-ui/core",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "Poggioli",
+  "license": "unlicense",
+  "private": false
+}
