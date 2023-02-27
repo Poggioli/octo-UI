@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint \"**/*.ts*\"",
-    "test": "jest"
+    "test": "jest",
+    "clear": "rimraf .turbo coverage node_modules dist"
   },
   "devDependencies": {
     "@types/react": "^18.0.22",
@@ -14,6 +15,6 @@
     "eslint-config-custom": "*",
     "react": "^18.2.0",
     "tsconfig": "*",
-    "typescript": "4.5.3"
+    "typescript": "4.5.2"
   }
 }
