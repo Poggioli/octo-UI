@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "clear": "rimraf .turbo coverage node_modules dist",
     "dev": "next dev --port 3001",
     "build": "next build",
     "start": "next start",
