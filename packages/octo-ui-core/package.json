@@ -1,11 +1,19 @@
 {
   "name": "@octo-ui/core",
   "version": "0.0.0",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "author": "Poggioli",
   "private": false,
+  "scripts": {
+    "build": "tsup ./index.ts --format cjs --dts"
+  },
   "dependencies": {
     "@radix-ui/colors": "^0.1.8",
     "@stitches/react": "^1.2.8"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "*",
+    "typescript": "4.5.3"
   }
 }
