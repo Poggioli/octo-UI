@@ -2,11 +2,14 @@
   "name": "@octo-ui/core",
   "version": "0.0.0",
   "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "sideEffects": false,
   "author": "Poggioli",
   "private": false,
   "scripts": {
-    "build": "tsup ./index.ts --format cjs --dts"
+    "build": "tsup ./index.ts",
+    "clear": "rimraf .turbo coverage node_modules dist"
   },
   "dependencies": {
     "@radix-ui/colors": "^0.1.8",
@@ -14,6 +17,6 @@
   },
   "devDependencies": {
     "eslint-config-custom": "*",
-    "typescript": "4.5.3"
+    "typescript": "4.5.2"
   }
 }
