@@ -197,6 +197,14 @@ export const theme = {
     shadows: {},
     transitions: {},
   },
+  media: {
+    small: "(min-width: 520px)",
+    medium: "(min-width: 900px)",
+    large: "(min-width: 1200px)",
+    extraLarge: "(min-width: 1800px)",
+    motion: "(prefers-reduced-motion)",
+    hover: "(any-hover: hover)",
+  },
   utils: {
     p: (value: OctoProperty<"padding">) => ({
       padding: value,
