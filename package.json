@@ -10,6 +10,7 @@
     "build": "turbo run build",
     "build:watch": "turbo run build -- --watch",
     "clear": "rimraf .turbo coverage node_modules dist",
+    "clear:project": "turbo run clear && yarn clear",
     "bootstrap": "yarn && turbo run clear && yarn clear && yarn && turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
@@ -28,7 +29,7 @@
     "jest-environment-jsdom": "^29.4.3",
     "prettier": "latest",
     "rimraf": "^4.1.2",
-    "tsup": "^6.6.3",
+    "tsup": "^6.5.0",
     "turbo": "latest"
   },
   "engines": {
