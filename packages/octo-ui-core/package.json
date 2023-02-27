@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "main": "index.js",
   "author": "Poggioli",
-  "license": "unlicense",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "@radix-ui/colors": "^0.1.8",
+    "@stitches/react": "^1.2.8"
+  }
 }
