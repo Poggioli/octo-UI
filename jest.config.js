@@ -13,6 +13,12 @@ module.exports = {
     "!packages/**/src/**/types.ts(x)",
     "!packages/**/src/**/values.ts(x)",
     "!packages/**/src/**/__snapshots__/**/*",
+    './src/**',
+    '!./src/**/styles.ts',
+    '!./src/**/*stories.ts',
+    '!./src/**/types.ts',
+    '!./src/**/values.ts',
+    '!./src/**/__snapshots__/**/*',
   ],
   coverageThreshold: {
     global: {

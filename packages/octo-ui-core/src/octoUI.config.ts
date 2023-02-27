@@ -6,7 +6,7 @@ import {
   red,
   slate,
   whiteA,
-  yellow
+  yellow,
 } from "@radix-ui/colors";
 import type * as Stitches from "@stitches/react";
 import { createStitches } from "@stitches/react";

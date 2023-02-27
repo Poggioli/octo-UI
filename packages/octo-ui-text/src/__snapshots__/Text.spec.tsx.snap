@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Text /> GIVEN a <Text />
+      WHEN size props is not setted
+      THEN should render a <Text /> using size 3 1`] = `
+<div>
+  <span
+    class="octo-UI-c-gWerhV octo-UI-c-gWerhV-iMVRpC-size-3 octo-UI-c-gWerhV-iisyIHw-css"
+  >
+    Text
+  </span>
+</div>
+`;
+
+exports[`<Text /> Size props GIVEN a <Text /> with size props
+        WHEN size props is 1
+        THEN should render a <Text /> using size 1 1`] = `
+<div>
+  <span
+    class="octo-UI-c-gWerhV octo-UI-c-gWerhV-EDrvg-size-1 octo-UI-c-gWerhV-iisyIHw-css"
+  >
+    Text
+  </span>
+</div>
+`;
+
+exports[`<Text /> Size props GIVEN a <Text /> with size props
+        WHEN size props is 2
+        THEN should render a <Text /> using size 2 1`] = `
+<div>
+  <span
+    class="octo-UI-c-gWerhV octo-UI-c-gWerhV-cBLpOj-size-2 octo-UI-c-gWerhV-iisyIHw-css"
+  >
+    Text
+  </span>
+</div>
+`;
+
+exports[`<Text /> Size props GIVEN a <Text /> with size props
+        WHEN size props is 3
+        THEN should render a <Text /> using size 3 1`] = `
+<div>
+  <span
+    class="octo-UI-c-gWerhV octo-UI-c-gWerhV-iMVRpC-size-3 octo-UI-c-gWerhV-iisyIHw-css"
+  >
+    Text
+  </span>
+</div>
+`;
+
+exports[`<Text /> Size props GIVEN a <Text /> with size props
+        WHEN size props is 4
+        THEN should render a <Text /> using size 4 1`] = `
+<div>
+  <span
+    class="octo-UI-c-gWerhV octo-UI-c-gWerhV-gHgbiV-size-4 octo-UI-c-gWerhV-iisyIHw-css"
+  >
+    Text
+  </span>
+</div>
+`;
+
+exports[`<Text /> Size props GIVEN a <Text /> with size props
+        WHEN size props is 5
+        THEN should render a <Text /> using size 5 1`] = `
+<div>
+  <span
+    class="octo-UI-c-gWerhV octo-UI-c-gWerhV-cNGvkq-size-5 octo-UI-c-gWerhV-iisyIHw-css"
+  >
+    Text
+  </span>
+</div>
+`;
+
+exports[`<Text /> Size props GIVEN a <Text /> with size props
+        WHEN size props is 6
+        THEN should render a <Text /> using size 6 1`] = `
+<div>
+  <span
+    class="octo-UI-c-gWerhV octo-UI-c-gWerhV-cMAlre-size-6 octo-UI-c-gWerhV-iisyIHw-css"
+  >
+    Text
+  </span>
+</div>
+`;
+
+exports[`<Text /> Size props GIVEN a <Text /> with size props
+        WHEN size props is 7
+        THEN should render a <Text /> using size 7 1`] = `
+<div>
+  <span
+    class="octo-UI-c-gWerhV octo-UI-c-gWerhV-cGJhQn-size-7 octo-UI-c-gWerhV-iisyIHw-css"
+  >
+    Text
+  </span>
+</div>
+`;
+
+exports[`<Text /> Size props GIVEN a <Text /> with size props
+        WHEN size props is 8
+        THEN should render a <Text /> using size 8 1`] = `
+<div>
+  <span
+    class="octo-UI-c-gWerhV octo-UI-c-gWerhV-cpZglh-size-8 octo-UI-c-gWerhV-iisyIHw-css"
+  >
+    Text
+  </span>
+</div>
+`;
+
+exports[`<Text /> Size props GIVEN a <Text /> with size props
+        WHEN size props is 9
+        THEN should render a <Text /> using size 9 1`] = `
+<div>
+  <span
+    class="octo-UI-c-gWerhV octo-UI-c-gWerhV-hlJriB-size-9 octo-UI-c-gWerhV-iisyIHw-css"
+  >
+    Text
+  </span>
+</div>
+`;
+
+exports[`<Text /> color props GIVEN a <Text />
+        WHEN color props is $grey11
+        THEN should render a <Text /> $grey11 as color 1`] = `
+<div>
+  <span
+    class="octo-UI-c-gWerhV octo-UI-c-gWerhV-iMVRpC-size-3 octo-UI-c-gWerhV-ibuyHBD-css"
+  >
+    Text
+  </span>
+</div>
+`;
