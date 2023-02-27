@@ -1,4 +1,13 @@
-import { blue, green, orange, red, slate, yellow } from "@radix-ui/colors";
+import {
+  blackA,
+  blue,
+  green,
+  orange,
+  red,
+  slate,
+  whiteA,
+  yellow,
+} from "@radix-ui/colors";
 import { createStitches } from "@stitches/react";
 import { OctoProperty } from "./octoUI.config";
 
@@ -85,6 +94,32 @@ export const theme = {
       success10: green.green10,
       success11: green.green11,
       success12: green.green12,
+
+      black1: blackA.blackA1,
+      black2: blackA.blackA2,
+      black3: blackA.blackA3,
+      black4: blackA.blackA4,
+      black5: blackA.blackA5,
+      black6: blackA.blackA6,
+      black7: blackA.blackA7,
+      black8: blackA.blackA8,
+      black9: blackA.blackA9,
+      black10: blackA.blackA10,
+      black11: blackA.blackA11,
+      black12: blackA.blackA12,
+
+      white1: whiteA.whiteA1,
+      white2: whiteA.whiteA2,
+      white3: whiteA.whiteA3,
+      white4: whiteA.whiteA4,
+      white5: whiteA.whiteA5,
+      white6: whiteA.whiteA6,
+      white7: whiteA.whiteA7,
+      white8: whiteA.whiteA8,
+      white9: whiteA.whiteA9,
+      white10: whiteA.whiteA10,
+      white11: whiteA.whiteA11,
+      white12: whiteA.whiteA12,
     },
     sizes: {
       1: 1,
