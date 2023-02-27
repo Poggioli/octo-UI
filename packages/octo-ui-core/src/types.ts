@@ -1,23 +1,28 @@
-import { ElementType } from "react";
+import React from "react";
 import { CSS } from "./octoUI.config";
 
-type As<Props = any> = ElementType<Props>;
+export type As<Props = any> = React.ElementType<Props>;
 
-type OmitCommonProps<
+export type OmitCommonProps<
   Target,
   OmitAdditionalProps extends keyof any = never
 > = Omit<Target, "as" | OmitAdditionalProps>;
 
-type RightJoinProps<
+export type RightJoinProps<
   SourceProps extends object = {},
   OverrideProps extends object = {}
 > = OmitCommonProps<SourceProps, keyof OverrideProps> & OverrideProps;
 
-type PropsOf<T extends As> = React.ComponentPropsWithoutRef<T> & {
+export type PropsOf<T extends As> = React.ComponentPropsWithoutRef<T> & {
   as?: As;
 };
 
-type MergeWithAs<
+export type HTMLOctoProps<T extends As> = Omit<PropsOf<T>, "as" | "CSS"> & {
+  as?: As;
+  css?: CSS;
+};
+
+export type MergeWithAs<
   ComponentProps extends object,
   AsProps extends object,
   AdditionalProps extends object = {},
@@ -53,10 +58,8 @@ export const forwardRef = <Component extends As, Props extends object = {}>(
     }
   >
 ): OctoComponent<Component, Props> => {
-  return forwardRef(component) as unknown as OctoComponent<Component, Props>;
-};
-
-export type HTMLOctoProps<T extends As> = Omit<PropsOf<T>, "as" | "CSS"> & {
-  as?: As;
-  css?: CSS;
+  return React.forwardRef(component) as unknown as OctoComponent<
+    Component,
+    Props
+  >;
 };

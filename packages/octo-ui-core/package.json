@@ -7,8 +7,10 @@
   "sideEffects": false,
   "author": "Poggioli",
   "private": false,
+  "license": "UNLICENSED",
   "scripts": {
-    "build": "tsup ./index.ts",
+    "lint": "TIMING=1 eslint \"**/*.ts*\"",
+    "build": "tsup --config ./tsup.config.ts",
     "clear": "rimraf .turbo coverage node_modules dist"
   },
   "dependencies": {
