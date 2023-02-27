@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "build:watch": "turbo run build -- --watch",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "test": "turbo run test",
@@ -24,6 +25,7 @@
     "jest": "^29.4.3",
     "jest-environment-jsdom": "^29.4.3",
     "prettier": "latest",
+    "tsup": "^6.6.3",
     "turbo": "latest"
   },
   "engines": {
