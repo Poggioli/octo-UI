@@ -37,4 +37,3 @@ Heading.toString = () => `.${StyledHeading.className}`;
 
 export { StyledHeading };
 export { Heading };
-
