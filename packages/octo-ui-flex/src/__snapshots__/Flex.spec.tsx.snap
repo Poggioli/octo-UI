@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Flex /> GIVEN a <Flex />
+      WHEN render is called
+      THEN should render a <Flex /> 1`] = `
+<div>
+  <div
+    class="octo-UI-c-gqwkJN octo-UI-c-gqwkJN-djZMnX-flexDirection-initial octo-UI-c-gqwkJN-eJbcS-flexWrap-initial octo-UI-c-gqwkJN-fVplCG-justifyContent-initial octo-UI-c-gqwkJN-ebbZJG-alignItems-initial octo-UI-c-gqwkJN-dYGMXV-alignContent-initial octo-UI-c-gqwkJN-bexZoo-alignSelf-initial"
+  />
+</div>
+`;
