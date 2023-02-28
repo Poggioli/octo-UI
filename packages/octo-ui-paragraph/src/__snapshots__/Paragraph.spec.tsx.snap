@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Paragraph /> GIVEN a <Paragraph />
+      WHEN screen is equal or greater than 900px
+      THEN should render a <Paragraph /> using size 4
+      AND lineHeight 27px 1`] = `
+<div>
+  <p
+    class="octo-UI-c-gWerhV octo-UI-c-PJLV octo-UI-c-gWerhV-iMVRpC-size-3 octo-UI-c-gWerhV-htKPem-size-4 octo-UI-c-gWerhV-ikRrLrg-css"
+  >
+    Paragraph
+  </p>
+</div>
+`;
+
+exports[`<Paragraph /> GIVEN a <Paragraph />
+      WHEN screen is small than 900px
+      THEN should render a <Paragraph /> using size 3
+      AND lineHeight 25px 1`] = `
+<div>
+  <p
+    class="octo-UI-c-gWerhV octo-UI-c-PJLV octo-UI-c-gWerhV-iMVRpC-size-3 octo-UI-c-gWerhV-htKPem-size-4 octo-UI-c-gWerhV-ikRrLrg-css"
+  >
+    Paragraph
+  </p>
+</div>
+`;
+
+exports[`<Paragraph /> color props GIVEN a <Paragraph />
+        WHEN color props is $grey10
+        THEN should render a <Paragraph /> $grey10 as color 1`] = `
+<div>
+  <p
+    class="octo-UI-c-gWerhV octo-UI-c-PJLV octo-UI-c-gWerhV-iMVRpC-size-3 octo-UI-c-gWerhV-htKPem-size-4 octo-UI-c-gWerhV-ihycQdp-css"
+  >
+    Paragraph
+  </p>
+</div>
+`;
+
+exports[`<Paragraph /> color props GIVEN a <Paragraph />
+        WHEN color props is not setted
+        THEN should render a <Paragraph /> $grey11 as color 1`] = `
+<div>
+  <p
+    class="octo-UI-c-gWerhV octo-UI-c-PJLV octo-UI-c-gWerhV-iMVRpC-size-3 octo-UI-c-gWerhV-htKPem-size-4 octo-UI-c-gWerhV-ikRrLrg-css"
+  >
+    Paragraph
+  </p>
+</div>
+`;
