@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Box /> GIVEN a <Box />
+      WHEN render is called
+      THEN should render a <Box /> 1`] = `
+<div>
+  <div
+    class="octo-UI-c-lesPJm"
+  />
+</div>
+`;
