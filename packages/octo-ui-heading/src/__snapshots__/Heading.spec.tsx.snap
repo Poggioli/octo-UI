@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Heading /> GIVEN a <Heading />
+      WHEN screen is equal or greater than 900px
+      THEN should render a <Heading /> using size 4
+      AND lineHeight 27px 1`] = `
+<div>
+  <h1
+    class="octo-UI-c-gWerhV octo-UI-c-PJLV octo-UI-c-gWerhV-cMAlre-size-6 octo-UI-c-gWerhV-cPVmnY-size-7 octo-UI-c-gWerhV-ikZhbNd-css"
+  >
+    Heading
+  </h1>
+</div>
+`;
+
+exports[`<Heading /> GIVEN a <Heading />
+      WHEN screen is small than 900px
+      THEN should render a <Heading /> using size 3
+      AND lineHeight 25px 1`] = `
+<div>
+  <h1
+    class="octo-UI-c-gWerhV octo-UI-c-PJLV octo-UI-c-gWerhV-cMAlre-size-6 octo-UI-c-gWerhV-cPVmnY-size-7 octo-UI-c-gWerhV-ikZhbNd-css"
+  >
+    Heading
+  </h1>
+</div>
+`;
+
+exports[`<Heading /> color props GIVEN a <Heading />
+        WHEN color props is $grey10
+        THEN should render a <Heading /> $grey10 as color 1`] = `
+<div>
+  <h1
+    class="octo-UI-c-gWerhV octo-UI-c-PJLV octo-UI-c-gWerhV-cMAlre-size-6 octo-UI-c-gWerhV-cPVmnY-size-7 octo-UI-c-gWerhV-ijRaJtX-css"
+  >
+    Heading
+  </h1>
+</div>
+`;
+
+exports[`<Heading /> color props GIVEN a <Heading />
+        WHEN color props is not setted
+        THEN should render a <Heading /> $grey11 as color 1`] = `
+<div>
+  <h1
+    class="octo-UI-c-gWerhV octo-UI-c-PJLV octo-UI-c-gWerhV-cMAlre-size-6 octo-UI-c-gWerhV-cPVmnY-size-7 octo-UI-c-gWerhV-ikZhbNd-css"
+  >
+    Heading
+  </h1>
+</div>
+`;
