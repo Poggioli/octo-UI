@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Title /> GIVEN a <Title />
+      WHEN screen is equal or greater than 900px
+      THEN should render a <Title /> using size 9
+      AND lineHeight 55px 1`] = `
+<div>
+  <h1
+    class="octo-UI-c-gWerhV octo-UI-c-PJLV octo-UI-c-gWerhV-cpZglh-size-8 octo-UI-c-gWerhV-CWrEW-size-9 octo-UI-c-gWerhV-ikUlEhX-css"
+  >
+    Title
+  </h1>
+</div>
+`;
+
+exports[`<Title /> GIVEN a <Title />
+      WHEN screen is small than 900px
+      THEN should render a <Title /> using size 8
+      AND lineHeight 35px 1`] = `
+<div>
+  <h1
+    class="octo-UI-c-gWerhV octo-UI-c-PJLV octo-UI-c-gWerhV-cpZglh-size-8 octo-UI-c-gWerhV-CWrEW-size-9 octo-UI-c-gWerhV-ikUlEhX-css"
+  >
+    Title
+  </h1>
+</div>
+`;
+
+exports[`<Title /> color props GIVEN a <Title />
+        WHEN color props is $grey11
+        THEN should render a <Title /> $grey11 as color 1`] = `
+<div>
+  <h1
+    class="octo-UI-c-gWerhV octo-UI-c-PJLV octo-UI-c-gWerhV-cpZglh-size-8 octo-UI-c-gWerhV-CWrEW-size-9 octo-UI-c-gWerhV-ijOTmEM-css"
+  >
+    Title
+  </h1>
+</div>
+`;
+
+exports[`<Title /> color props GIVEN a <Title />
+        WHEN color props is not setted
+        THEN should render a <Title /> $grey12 as color 1`] = `
+<div>
+  <h1
+    class="octo-UI-c-gWerhV octo-UI-c-PJLV octo-UI-c-gWerhV-cpZglh-size-8 octo-UI-c-gWerhV-CWrEW-size-9 octo-UI-c-gWerhV-ikUlEhX-css"
+  >
+    Title
+  </h1>
+</div>
+`;
