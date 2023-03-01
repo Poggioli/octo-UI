@@ -4,7 +4,7 @@ import {
   ScrollAreaCorner,
   ScrollAreaScrollbar,
   ScrollAreaThumb,
-  ScrollAreaViewport
+  ScrollAreaViewport,
 } from "./ScrollArea";
 
 describe("<ScrollArea />", () => {
