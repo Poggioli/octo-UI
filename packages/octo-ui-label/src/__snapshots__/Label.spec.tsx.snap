@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Label /> GIVEN a <Label />
+      WHEN render is called
+      THEN should render a <Label /> 1`] = `
+<div>
+  <label
+    class="octo-UI-c-gHWBzz octo-UI-c-gWerhV octo-UI-c-gWerhV-iMVRpC-size-3 octo-UI-c-gWerhV-iisyIHw-css"
+  >
+    Label
+  </label>
+</div>
+`;
+
+exports[`<Label /> color props GIVEN a <Label />
+        WHEN color props is $grey11
+        THEN should render a <Label /> $grey11 as color 1`] = `
+<div>
+  <label
+    class="octo-UI-c-gHWBzz octo-UI-c-gWerhV octo-UI-c-gWerhV-iMVRpC-size-3 octo-UI-c-gWerhV-ibuyHBD-css"
+  >
+    Label
+  </label>
+</div>
+`;
+
+exports[`<Label /> color props GIVEN a <Label />
+        WHEN color props is not setted
+        THEN should render a <Label /> $grey12 as color 1`] = `
+<div>
+  <label
+    class="octo-UI-c-gHWBzz octo-UI-c-gWerhV octo-UI-c-gWerhV-iMVRpC-size-3 octo-UI-c-gWerhV-iisyIHw-css"
+  >
+    Label
+  </label>
+</div>
+`;
