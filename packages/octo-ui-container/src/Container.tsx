@@ -11,4 +11,3 @@ Container.toString = () => `.${StyledContainer.className}`;
 
 export { StyledContainer };
 export { Container };
-
