@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Container /> GIVEN a <Container />
+      WHEN render is called
+      THEN should render a <Container /> 1`] = `
+<div>
+  <div
+    class="octo-UI-c-fEDgXe octo-UI-c-fEDgXe-gdopcj-size-4"
+  />
+</div>
+`;
