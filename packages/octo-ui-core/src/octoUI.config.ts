@@ -6,7 +6,6 @@ import {
   red,
   slate,
   whiteA,
-  yellow,
 } from "@radix-ui/colors";
 import type * as Stitches from "@stitches/react";
 import { createStitches } from "@stitches/react";
@@ -53,19 +52,6 @@ const defaultTheme = {
       secondary10: orange.orange10,
       secondary11: orange.orange11,
       secondary12: orange.orange12,
-
-      accent1: yellow.yellow1,
-      accent2: yellow.yellow2,
-      accent3: yellow.yellow3,
-      accent4: yellow.yellow4,
-      accent5: yellow.yellow5,
-      accent6: yellow.yellow6,
-      accent7: yellow.yellow7,
-      accent8: yellow.yellow8,
-      accent9: yellow.yellow9,
-      accent10: yellow.yellow10,
-      accent11: yellow.yellow11,
-      accent12: yellow.yellow12,
 
       grey1: slate.slate1,
       grey2: slate.slate2,
@@ -201,7 +187,11 @@ const defaultTheme = {
       max: "999",
     },
     borderStyles: {},
-    borderWidths: {},
+    borderWidths: {
+      1: "1px",
+      2: "2px",
+      3: "4px",
+    },
     fontWeights: {},
     letterSpacings: {},
     lineHeights: {},
