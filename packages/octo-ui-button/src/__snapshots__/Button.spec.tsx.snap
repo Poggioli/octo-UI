@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> GIVEN a <Button />
+      WHEN render is called
+      THEN should render a <Button /> 1`] = `
+<div>
+  <button
+    class="octo-UI-c-fYBmDf octo-UI-c-fYBmDf-gHVRac-color-unstyled octo-UI-c-fYBmDf-cYmrsO-variant-solid octo-UI-c-fYBmDf-flTkwI-corners-soft octo-UI-c-fYBmDf-JxRTl-size-standard"
+  >
+    Button
+  </button>
+</div>
+`;
