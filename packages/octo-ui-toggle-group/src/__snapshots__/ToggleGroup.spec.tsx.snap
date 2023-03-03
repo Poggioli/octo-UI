@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ToggleGroup /> GIVEN a <ToggleGroup />
+      WHEN render is called
+      THEN should render a <ToggleGroup /> 1`] = `
+<div>
+  <div
+    aria-label="Text alignment"
+    class="octo-UI-c-eWctCk octo-UI-c-eWctCk-etcbZa-color-unstyled octo-UI-c-eWctCk-fIEaQw-size-standard"
+    dir="ltr"
+    role="group"
+    style="outline: none;"
+    tabindex="0"
+  >
+    <button
+      aria-checked="false"
+      aria-label="Option 0"
+      class="octo-UI-c-iYXamd"
+      data-radix-collection-item=""
+      data-state="off"
+      role="radio"
+      tabindex="-1"
+      type="button"
+    >
+      Option 
+      0
+    </button>
+    <button
+      aria-checked="false"
+      aria-label="Option 1"
+      class="octo-UI-c-iYXamd"
+      data-radix-collection-item=""
+      data-state="off"
+      role="radio"
+      tabindex="-1"
+      type="button"
+    >
+      Option 
+      1
+    </button>
+    <button
+      aria-checked="false"
+      aria-label="Option 2"
+      class="octo-UI-c-iYXamd"
+      data-radix-collection-item=""
+      data-state="off"
+      role="radio"
+      tabindex="-1"
+      type="button"
+    >
+      Option 
+      2
+    </button>
+  </div>
+</div>
+`;
