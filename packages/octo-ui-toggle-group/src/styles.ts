@@ -1,8 +1,6 @@
 import { styled } from "@octo-ui/core";
 import * as ToggleGroup from "@radix-ui/react-toggle-group";
 
-// ========================================================================= //
-
 const StyledToggleGroupItem = styled(ToggleGroup.Item, {
   all: "unset",
   backgroundColor: "transparen",
