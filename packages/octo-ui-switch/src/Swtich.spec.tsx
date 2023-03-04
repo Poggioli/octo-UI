@@ -76,7 +76,7 @@ describe("<Switch />", () => {
   it(`GIVEN a <Switch />
       WHEN toString is called
       THEN return a string`, () => {
-    expect(Switch.toString()).toBe(".octo-UI-c-PJLV");
+    expect(Switch.toString()).toBe(".octo-UI-c-liqGON");
   });
 
   it(`GIVEN a <SwitchContainer />

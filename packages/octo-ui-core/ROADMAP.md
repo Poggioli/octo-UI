@@ -16,7 +16,7 @@
 - Radio Group
 - Select
 - Slider
-- Switch ⚒️
+- Switch ✅
 - Toggle Group ✅
 
 <br>

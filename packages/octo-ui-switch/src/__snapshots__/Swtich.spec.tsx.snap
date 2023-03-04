@@ -6,14 +6,14 @@ exports[`<Switch /> GIVEN a <Switch />
 <div>
   <button
     aria-checked="false"
-    class="octo-UI-c-PJLV"
+    class="octo-UI-c-liqGON octo-UI-c-liqGON-gYIKvC-color-error"
     data-state="unchecked"
     role="switch"
     type="button"
     value="on"
   >
     <span
-      class="octo-UI-c-PJLV"
+      class="octo-UI-c-kBJywl"
       data-state="unchecked"
     />
   </button>
@@ -28,15 +28,14 @@ exports[`<Switch /> GIVEN a <Switch />, <SwitchLabel /> and <SwitchContainer />
     class="octo-UI-c-iQGaKg"
   >
     <label
-      class="octo-UI-c-gHWBzz octo-UI-c-kwAZbD"
-      color="$gray-80"
+      class="octo-UI-c-gHWBzz octo-UI-c-kwAZbD octo-UI-c-gWerhV octo-UI-c-gWerhV-iMVRpC-size-3 octo-UI-c-gWerhV-iiZhlqR-css"
       for="switch-label"
     >
       Switch Label
     </label>
     <button
       aria-checked="false"
-      class="octo-UI-c-PJLV"
+      class="octo-UI-c-liqGON octo-UI-c-liqGON-gYIKvC-color-error"
       data-disabled=""
       data-state="unchecked"
       disabled=""
@@ -46,7 +45,7 @@ exports[`<Switch /> GIVEN a <Switch />, <SwitchLabel /> and <SwitchContainer />
       value="on"
     >
       <span
-        class="octo-UI-c-PJLV"
+        class="octo-UI-c-kBJywl"
         data-disabled=""
         data-state="unchecked"
       />
@@ -63,14 +62,14 @@ exports[`<Switch /> GIVEN a <Switch />, <SwitchLabel /> and <SwitchContainer />
     class="octo-UI-c-iQGaKg"
   >
     <label
-      class="octo-UI-c-gHWBzz octo-UI-c-kwAZbD"
+      class="octo-UI-c-gHWBzz octo-UI-c-kwAZbD octo-UI-c-gWerhV octo-UI-c-gWerhV-iMVRpC-size-3 octo-UI-c-gWerhV-iisyIHw-css"
       for="switch-label"
     >
       Switch Label
     </label>
     <button
       aria-checked="false"
-      class="octo-UI-c-PJLV"
+      class="octo-UI-c-liqGON octo-UI-c-liqGON-gYIKvC-color-error"
       data-state="unchecked"
       id="switch-label"
       role="switch"
@@ -78,7 +77,7 @@ exports[`<Switch /> GIVEN a <Switch />, <SwitchLabel /> and <SwitchContainer />
       value="on"
     >
       <span
-        class="octo-UI-c-PJLV"
+        class="octo-UI-c-kBJywl"
         data-state="unchecked"
       />
     </button>

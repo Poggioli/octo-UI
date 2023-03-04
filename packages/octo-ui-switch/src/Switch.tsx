@@ -1,5 +1,5 @@
 import { forwardRef } from "@octo-ui/core";
-import { StyledLabel } from "@octo-ui/label";
+import { Label, StyledLabel } from "@octo-ui/label";
 import { useContext, useEffect } from "react";
 import {
   StyledSwitchContainer,
@@ -67,11 +67,11 @@ const SwitchLabel = forwardRef<typeof StyledSwitchLabel, SwitchLabelProps>(
     } = useContext(SwitchContext);
 
     return (
-      <StyledSwitchLabel
+      <Label
         as={StyledSwitchLabel}
         {...props}
         ref={forwardedRef}
-        color={disabled ? "$gray-80" : props.color}
+        color={disabled ? "$colors$grey8" : props.color}
       />
     );
   }
