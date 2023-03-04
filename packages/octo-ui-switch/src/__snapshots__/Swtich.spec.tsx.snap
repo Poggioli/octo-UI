@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Switch /> GIVEN a <Switch />
+      WHEN render is called
+      THEN should render a <Switch /> 1`] = `
+<div>
+  <button
+    aria-checked="false"
+    class="octo-UI-c-PJLV"
+    data-state="unchecked"
+    role="switch"
+    type="button"
+    value="on"
+  >
+    <span
+      class="octo-UI-c-PJLV"
+      data-state="unchecked"
+    />
+  </button>
+</div>
+`;
+
+exports[`<Switch /> GIVEN a <Switch />, <SwitchLabel /> and <SwitchContainer />
+      WHEN render it's disabled
+      THEN should match to snapshot 1`] = `
+<div>
+  <div
+    class="octo-UI-c-iQGaKg"
+  >
+    <label
+      class="octo-UI-c-gHWBzz octo-UI-c-kwAZbD"
+      color="$gray-80"
+      for="switch-label"
+    >
+      Switch Label
+    </label>
+    <button
+      aria-checked="false"
+      class="octo-UI-c-PJLV"
+      data-disabled=""
+      data-state="unchecked"
+      disabled=""
+      id="switch-label"
+      role="switch"
+      type="button"
+      value="on"
+    >
+      <span
+        class="octo-UI-c-PJLV"
+        data-disabled=""
+        data-state="unchecked"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`<Switch /> GIVEN a <Switch />, <SwitchLabel /> and <SwitchContainer />
+      WHEN render it's enabled
+      THEN should match to snapshot 1`] = `
+<div>
+  <div
+    class="octo-UI-c-iQGaKg"
+  >
+    <label
+      class="octo-UI-c-gHWBzz octo-UI-c-kwAZbD"
+      for="switch-label"
+    >
+      Switch Label
+    </label>
+    <button
+      aria-checked="false"
+      class="octo-UI-c-PJLV"
+      data-state="unchecked"
+      id="switch-label"
+      role="switch"
+      type="button"
+      value="on"
+    >
+      <span
+        class="octo-UI-c-PJLV"
+        data-state="unchecked"
+      />
+    </button>
+  </div>
+</div>
+`;
