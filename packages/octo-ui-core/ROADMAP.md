@@ -15,7 +15,7 @@
 - Input
 - Radio Group
 - Select
-- Slider
+- Slider ✅
 - Switch ✅
 - Toggle Group ✅
 
