@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Radio /> GIVEN a <Radio />
+      WHEN render is called
+      THEN should render a <Radio /> 1`] = `
+<div>
+  <div
+    aria-label="View density"
+    aria-required="false"
+    class="octo-UI-c-beTnUS octo-UI-c-beTnUS-jnbsLi-color-unstyled"
+    dir="ltr"
+    role="radiogroup"
+    style="outline: none;"
+    tabindex="0"
+  >
+    <div
+      class="octo-UI-c-gyTDmN"
+    >
+      <button
+        aria-checked="false"
+        class="octo-UI-c-opsBT"
+        data-disabled=""
+        data-radix-collection-item=""
+        data-state="unchecked"
+        disabled=""
+        id="r1"
+        role="radio"
+        tabindex="-1"
+        type="button"
+        value="default"
+      />
+      <label
+        class="octo-UI-c-gHWBzz octo-UI-c-kwAZbD octo-UI-c-gWerhV octo-UI-c-gWerhV-iMVRpC-size-3 octo-UI-c-gWerhV-iisyIHw-css"
+        for="r1"
+      >
+        Default
+      </label>
+    </div>
+    <div
+      class="octo-UI-c-gyTDmN"
+    >
+      <button
+        aria-checked="true"
+        class="octo-UI-c-opsBT"
+        data-radix-collection-item=""
+        data-state="checked"
+        id="r2"
+        role="radio"
+        tabindex="-1"
+        type="button"
+        value="comfortable"
+      >
+        <span
+          class="octo-UI-c-deeeBS"
+          data-state="checked"
+        />
+      </button>
+      <label
+        class="octo-UI-c-gHWBzz octo-UI-c-kwAZbD octo-UI-c-gWerhV octo-UI-c-gWerhV-iMVRpC-size-3 octo-UI-c-gWerhV-iisyIHw-css"
+        for="r2"
+      >
+        Comfortable
+      </label>
+    </div>
+    <div
+      class="octo-UI-c-gyTDmN"
+    >
+      <button
+        aria-checked="false"
+        class="octo-UI-c-opsBT"
+        data-radix-collection-item=""
+        data-state="unchecked"
+        id="r3"
+        role="radio"
+        tabindex="-1"
+        type="button"
+        value="compact"
+      />
+      <label
+        class="octo-UI-c-gHWBzz octo-UI-c-kwAZbD octo-UI-c-gWerhV octo-UI-c-gWerhV-iMVRpC-size-3 octo-UI-c-gWerhV-iisyIHw-css"
+        for="r3"
+      >
+        Compact
+      </label>
+    </div>
+  </div>
+</div>
+`;
