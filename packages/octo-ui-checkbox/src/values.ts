@@ -4,7 +4,8 @@ export const DEFAULT_CONTEXT_VALUE: CheckboxContextType = {
   state: {
     disabled: false,
     name: "",
-    defaultValue: []
+    defaultValue: [],
+    value: [],
   },
   setState: () => null,
 };

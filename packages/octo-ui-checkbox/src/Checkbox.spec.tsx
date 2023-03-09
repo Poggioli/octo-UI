@@ -218,4 +218,118 @@ describe("<Checkbox />", () => {
       expect(rendered.container).toMatchSnapshot();
     });
   });
+
+  describe("GIVEN a <CheckboxGroup/> whit value props", () => {
+    it(`WHEN value is undefined
+        THEN all checkbox should be unchecked`, () => {
+      const rendered = render(
+        <CheckboxGroup value={undefined}>
+          <CheckboxItemContainer>
+            <CheckboxItem id="fish" name="fish" value="fish" />
+            <CheckboxItemLabel htmlFor="fish">Fish</CheckboxItemLabel>
+          </CheckboxItemContainer>
+          <CheckboxItemContainer>
+            <CheckboxItem id="dog" name="dog" value="dog" />
+            <CheckboxItemLabel htmlFor="dog">Dog</CheckboxItemLabel>
+          </CheckboxItemContainer>
+        </CheckboxGroup>
+      );
+      const fishCheckbox = rendered.getByLabelText("Fish");
+      const dogCheckbox = rendered.getByLabelText("Dog");
+
+      expect(fishCheckbox).not.toBeChecked();
+      expect(dogCheckbox).not.toBeChecked();
+      expect(rendered.container).toMatchSnapshot();
+    });
+
+    it(`WHEN value has fish value
+        THEN fish checkbox should be checked
+        AND dog checkbox should be unchecked`, () => {
+      const rendered = render(
+        <CheckboxGroup value={["fish"]}>
+          <CheckboxItemContainer>
+            <CheckboxItem id="fish" name="fish" value="fish" />
+            <CheckboxItemLabel htmlFor="fish">Fish</CheckboxItemLabel>
+          </CheckboxItemContainer>
+          <CheckboxItemContainer>
+            <CheckboxItem id="dog" name="dog" value="dog" />
+            <CheckboxItemLabel htmlFor="dog">Dog</CheckboxItemLabel>
+          </CheckboxItemContainer>
+        </CheckboxGroup>
+      );
+      const fishCheckbox = rendered.getByLabelText("Fish");
+      const dogCheckbox = rendered.getByLabelText("Dog");
+
+      expect(fishCheckbox).toBeChecked();
+      expect(dogCheckbox).not.toBeChecked();
+      expect(rendered.container).toMatchSnapshot();
+    });
+
+    it(`WHEN value has all values
+        THEN all checkboxes should be checked`, () => {
+      const rendered = render(
+        <CheckboxGroup value={["fish", "dog"]}>
+          <CheckboxItemContainer>
+            <CheckboxItem id="fish" name="fish" value="fish" />
+            <CheckboxItemLabel htmlFor="fish">Fish</CheckboxItemLabel>
+          </CheckboxItemContainer>
+          <CheckboxItemContainer>
+            <CheckboxItem id="dog" name="dog" value="dog" />
+            <CheckboxItemLabel htmlFor="dog">Dog</CheckboxItemLabel>
+          </CheckboxItemContainer>
+        </CheckboxGroup>
+      );
+      const fishCheckbox = rendered.getByLabelText("Fish");
+      const dogCheckbox = rendered.getByLabelText("Dog");
+
+      expect(fishCheckbox).toBeChecked();
+      expect(dogCheckbox).toBeChecked();
+      expect(rendered.container).toMatchSnapshot();
+    });
+
+    it(`WHEN value is empty
+        THEN all checkbox should be unchecked`, () => {
+      const rendered = render(
+        <CheckboxGroup value={[]}>
+          <CheckboxItemContainer>
+            <CheckboxItem id="fish" name="fish" value="fish" />
+            <CheckboxItemLabel htmlFor="fish">Fish</CheckboxItemLabel>
+          </CheckboxItemContainer>
+          <CheckboxItemContainer>
+            <CheckboxItem id="dog" name="dog" value="dog" />
+            <CheckboxItemLabel htmlFor="dog">Dog</CheckboxItemLabel>
+          </CheckboxItemContainer>
+        </CheckboxGroup>
+      );
+      const fishCheckbox = rendered.getByLabelText("Fish");
+      const dogCheckbox = rendered.getByLabelText("Dog");
+
+      expect(fishCheckbox).not.toBeChecked();
+      expect(dogCheckbox).not.toBeChecked();
+      expect(rendered.container).toMatchSnapshot();
+    });
+
+    it(`WHEN defaultValue has dog checked
+        AND value doesn't have dog checked 
+        THEN dog checkbox should not be checked`, () => {
+      const rendered = render(
+        <CheckboxGroup defaultValue={["dog", "fish"]} value={["fish"]}>
+          <CheckboxItemContainer>
+            <CheckboxItem id="fish" name="fish" value="fish" />
+            <CheckboxItemLabel htmlFor="fish">Fish</CheckboxItemLabel>
+          </CheckboxItemContainer>
+          <CheckboxItemContainer>
+            <CheckboxItem id="dog" name="dog" value="dog" />
+            <CheckboxItemLabel htmlFor="dog">Dog</CheckboxItemLabel>
+          </CheckboxItemContainer>
+        </CheckboxGroup>
+      );
+      const fishCheckbox = rendered.getByLabelText("Fish");
+      const dogCheckbox = rendered.getByLabelText("Dog");
+
+      expect(fishCheckbox).toBeChecked();
+      expect(dogCheckbox).not.toBeChecked();
+      expect(rendered.container).toMatchSnapshot();
+    });
+  });
 });

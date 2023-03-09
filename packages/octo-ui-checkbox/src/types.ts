@@ -14,8 +14,7 @@ export type CheckboxContextProps = {
   disabled: boolean | undefined;
   name: string;
   defaultValue: string[] | undefined;
-  // value: string[];
-  // onValueChange: (value: string[]);
+  value: string[] | undefined;
 };
 
 export type CheckboxContextType = {
