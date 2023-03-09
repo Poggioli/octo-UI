@@ -3,6 +3,10 @@ import { StyledLabel } from "@octo-ui/label";
 import * as Checkbox from "@radix-ui/react-checkbox";
 
 const StyledCheckboxGroup = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  gap: "$6",
+
   variants: {
     color: {
       unstyled: {

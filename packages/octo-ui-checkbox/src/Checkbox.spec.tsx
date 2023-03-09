@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { fireEvent, render } from "@testing-library/react";
 import {
   CheckboxGroup,
   CheckboxItem,
@@ -37,7 +37,7 @@ describe("<Checkbox />", () => {
   it(`GIVEN a <CheckboxGroup />
       WHEN toString is called
       THEN return a string`, () => {
-    expect(CheckboxGroup.toString()).toBe(".octo-UI-c-PJLV");
+    expect(CheckboxGroup.toString()).toBe(".octo-UI-c-beTnUS");
   });
 
   it(`GIVEN a <CheckboxItemContainer />
@@ -311,7 +311,7 @@ describe("<Checkbox />", () => {
 
     it(`WHEN defaultValue has dog checked
         AND value doesn't have dog checked 
-        THEN dog checkbox should not be checked`, () => {
+        THEN dog checkbox should be checked`, () => {
       const rendered = render(
         <CheckboxGroup defaultValue={["dog", "fish"]} value={["fish"]}>
           <CheckboxItemContainer>
@@ -328,8 +328,122 @@ describe("<Checkbox />", () => {
       const dogCheckbox = rendered.getByLabelText("Dog");
 
       expect(fishCheckbox).toBeChecked();
-      expect(dogCheckbox).not.toBeChecked();
+      expect(dogCheckbox).toBeChecked();
       expect(rendered.container).toMatchSnapshot();
+    });
+  });
+
+  describe("GIVEN a <CheckboxGroup/> whit onChangeValue props", () => {
+    it(`WHEN onChangeValue is undefined
+        AND user check a checkbox
+        THEN that checkbox should be normaly checked`, () => {
+      const rendered = render(
+        <CheckboxGroup onChangeValue={undefined}>
+          <CheckboxItemContainer>
+            <CheckboxItem id="fish" name="fish" value="fish" />
+            <CheckboxItemLabel htmlFor="fish">Fish</CheckboxItemLabel>
+          </CheckboxItemContainer>
+          <CheckboxItemContainer>
+            <CheckboxItem id="dog" name="dog" value="dog" />
+            <CheckboxItemLabel htmlFor="dog">Dog</CheckboxItemLabel>
+          </CheckboxItemContainer>
+        </CheckboxGroup>
+      );
+
+      const fishCheckbox = rendered.getByLabelText("Fish");
+      const dogCheckbox = rendered.getByLabelText("Dog");
+
+      fireEvent.click(fishCheckbox);
+
+      expect(fishCheckbox).toBeChecked();
+      expect(dogCheckbox).not.toBeChecked();
+    });
+
+    it(`WHEN onChangeValue is undefined
+        AND user uncheck a checkbox
+        THEN that checkbox should be normaly unchecked`, () => {
+      const rendered = render(
+        <CheckboxGroup onChangeValue={undefined}>
+          <CheckboxItemContainer>
+            <CheckboxItem id="fish" name="fish" value="fish" />
+            <CheckboxItemLabel htmlFor="fish">Fish</CheckboxItemLabel>
+          </CheckboxItemContainer>
+          <CheckboxItemContainer>
+            <CheckboxItem id="dog" name="dog" value="dog" />
+            <CheckboxItemLabel htmlFor="dog">Dog</CheckboxItemLabel>
+          </CheckboxItemContainer>
+        </CheckboxGroup>
+      );
+
+      const fishCheckbox = rendered.getByLabelText("Fish");
+      const dogCheckbox = rendered.getByLabelText("Dog");
+
+      fireEvent.click(fishCheckbox);
+
+      expect(fishCheckbox).toBeChecked();
+      expect(dogCheckbox).not.toBeChecked();
+
+      fireEvent.click(fishCheckbox);
+
+      expect(fishCheckbox).not.toBeChecked();
+      expect(dogCheckbox).not.toBeChecked();
+    });
+
+    it(`WHEN onChangeValue is defined
+        AND user check a checkbox
+        THEN that checkboxValue should be in onChangeValue emitted value`, () => {
+      const onChangeValue = jest.fn();
+
+      const rendered = render(
+        <CheckboxGroup onChangeValue={onChangeValue}>
+          <CheckboxItemContainer>
+            <CheckboxItem id="fish" name="fish" value="fish" />
+            <CheckboxItemLabel htmlFor="fish">Fish</CheckboxItemLabel>
+          </CheckboxItemContainer>
+          <CheckboxItemContainer>
+            <CheckboxItem id="dog" name="dog" value="dog" />
+            <CheckboxItemLabel htmlFor="dog">Dog</CheckboxItemLabel>
+          </CheckboxItemContainer>
+        </CheckboxGroup>
+      );
+
+      const fishCheckbox = rendered.getByLabelText("Fish");
+
+      fireEvent.click(fishCheckbox);
+
+      expect(onChangeValue).toHaveBeenCalledTimes(1);
+      expect(onChangeValue).toHaveBeenCalledWith(["fish"]);
+    });
+
+    it(`WHEN onChangeValue is defined
+        AND user uncheck a checkbox
+        THEN that checkbox should be normaly unchecked`, () => {
+      const onChangeValue = jest.fn();
+
+      const rendered = render(
+        <CheckboxGroup onChangeValue={onChangeValue}>
+          <CheckboxItemContainer>
+            <CheckboxItem id="fish" name="fish" value="fish" />
+            <CheckboxItemLabel htmlFor="fish">Fish</CheckboxItemLabel>
+          </CheckboxItemContainer>
+          <CheckboxItemContainer>
+            <CheckboxItem id="dog" name="dog" value="dog" />
+            <CheckboxItemLabel htmlFor="dog">Dog</CheckboxItemLabel>
+          </CheckboxItemContainer>
+        </CheckboxGroup>
+      );
+
+      const fishCheckbox = rendered.getByLabelText("Fish");
+
+      fireEvent.click(fishCheckbox);
+
+      expect(onChangeValue).toHaveBeenCalledTimes(1);
+      expect(onChangeValue).toHaveBeenCalledWith(["fish"]);
+
+      fireEvent.click(fishCheckbox);
+
+      expect(onChangeValue).toHaveBeenCalledTimes(2);
+      expect(onChangeValue).toHaveBeenCalledWith([]);
     });
   });
 });

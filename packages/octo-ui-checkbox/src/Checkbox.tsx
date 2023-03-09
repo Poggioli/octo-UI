@@ -1,10 +1,12 @@
 import { forwardRef } from "@octo-ui/core";
+import * as Checkbox from "@radix-ui/react-checkbox";
 import { CheckIcon } from "@radix-ui/react-icons";
 import {
   createContext,
   FC,
   PropsWithChildren,
   useContext,
+  useEffect,
   useMemo,
   useState
 } from "react";
@@ -32,16 +34,24 @@ const CheckboxContext = createContext<CheckboxContextType>(
 
 const CheckboxContextProvider: FC<
   PropsWithChildren<Omit<CheckboxContextProps, "name" | "onValueChangeItem">>
-> = ({ children, disabled, defaultValue, value }) => {
+> = ({ children, disabled, defaultValue, value, onChangeValue }) => {
   const stateProps: CheckboxContextProps = {
     ...DEFAULT_CONTEXT_VALUE.state,
     disabled: disabled ?? DEFAULT_CONTEXT_VALUE.state.disabled,
     name: DEFAULT_CONTEXT_NAME_VALUE,
     defaultValue: defaultValue ?? DEFAULT_CONTEXT_VALUE.state.defaultValue,
     value,
+    onChangeValue,
   };
 
   const [state, setState] = useState(stateProps);
+
+  useEffect(() => {
+    setState((previousState) => ({
+      ...previousState,
+      disabled,
+    }));
+  }, [disabled]);
 
   return (
     <CheckboxContext.Provider value={{ state, setState }}>
@@ -55,19 +65,23 @@ const CheckboxContextProvider: FC<
 const CheckboxGroup = forwardRef<
   typeof StyledCheckboxGroup,
   CheckboxGroupProps
->(({ disabled, defaultValue, value: valueProps, ...props }, forwardedRef) => {
-  const [value, setValue] = useState<string[] | undefined>(valueProps);
-
-  return (
-    <CheckboxContextProvider
-      disabled={disabled}
-      defaultValue={defaultValue}
-      value={value}
-    >
-      <StyledCheckboxGroup {...props} ref={forwardedRef} />
-    </CheckboxContextProvider>
-  );
-});
+>(
+  (
+    { disabled, defaultValue, value: valueProps, onChangeValue, ...props },
+    forwardedRef
+  ) => {
+    return (
+      <CheckboxContextProvider
+        disabled={disabled}
+        defaultValue={defaultValue}
+        value={[...new Set([...(valueProps || []), ...(defaultValue || [])])]}
+        onChangeValue={onChangeValue}
+      >
+        <StyledCheckboxGroup {...props} ref={forwardedRef} />
+      </CheckboxContextProvider>
+    );
+  }
+);
 CheckboxGroup.toString = () => `.${StyledCheckboxGroup.className}`;
 
 // ========================================================================= //
@@ -89,7 +103,9 @@ const CheckboxItem = forwardRef<typeof StyledCheckboxItem, CheckboxItemProps>(
         disabled: contextDisabled,
         defaultValue,
         value: contextValue,
+        onChangeValue,
       },
+      setState,
     } = useContext(CheckboxContext);
 
     if (!contextName) {
@@ -109,8 +125,27 @@ const CheckboxItem = forwardRef<typeof StyledCheckboxItem, CheckboxItemProps>(
     );
 
     const checked = useMemo<boolean>(() => {
-      return contextValue ? contextValue.includes(value) : defaultChecked;
-    }, [contextValue, defaultChecked, value]);
+      return (contextValue as string[]).includes(value);
+    }, [contextValue, value]);
+
+    const handleonCheckedChange = (changeState: Checkbox.CheckedState) => {
+      const newState: string[] = (contextValue as string[]).filter(
+        (val: string) => val !== value
+      );
+
+      if (!!changeState) {
+        newState.push(value);
+      }
+
+      if (onChangeValue) {
+        onChangeValue(newState);
+      }
+
+      setState((previousValue) => ({
+        ...previousValue,
+        value: newState,
+      }));
+    };
 
     return (
       <StyledCheckboxItem
@@ -120,6 +155,7 @@ const CheckboxItem = forwardRef<typeof StyledCheckboxItem, CheckboxItemProps>(
         defaultChecked={defaultChecked}
         value={value}
         checked={checked}
+        onCheckedChange={handleonCheckedChange}
       >
         <CheckboxIndicator>
           <CheckIcon />
