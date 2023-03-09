@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox /> GIVEN a <Checkbox />
+      WHEN render is called
+      THEN should render a <Checkbox /> 1`] = `
+<div>
+  <div
+    class="octo-UI-c-PJLV octo-UI-c-PJLV-iNpQip-color-unstyled"
+  >
+    <div
+      class="octo-UI-c-hrAFsB"
+    >
+      <button
+        aria-checked="false"
+        class="octo-UI-c-fwkXIE"
+        data-state="unchecked"
+        id="fish"
+        role="checkbox"
+        type="button"
+        value="fish"
+      />
+      <label
+        class="octo-UI-c-gHWBzz octo-UI-c-kwAZbD"
+        for="fish"
+      >
+        Fish
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Checkbox /> GIVEN a <CheckboxGroup/> whit disabled props WHEN disabled is false
+        AND fish checkbox is disabled
+        THEN should render dog as enabled
+        AND fish as disabled 1`] = `
+<div>
+  <div
+    class="octo-UI-c-PJLV octo-UI-c-PJLV-iNpQip-color-unstyled"
+  >
+    <div
+      class="octo-UI-c-hrAFsB"
+    >
+      <button
+        aria-checked="false"
+        class="octo-UI-c-fwkXIE"
+        data-disabled=""
+        data-state="unchecked"
+        disabled=""
+        id="fish"
+        role="checkbox"
+        type="button"
+        value="fish"
+      />
+      <label
+        class="octo-UI-c-gHWBzz octo-UI-c-kwAZbD"
+        for="fish"
+      >
+        Fish
+      </label>
+    </div>
+    <div
+      class="octo-UI-c-hrAFsB"
+    >
+      <button
+        aria-checked="false"
+        class="octo-UI-c-fwkXIE"
+        data-state="unchecked"
+        id="dog"
+        role="checkbox"
+        type="button"
+        value="dog"
+      />
+      <label
+        class="octo-UI-c-gHWBzz octo-UI-c-kwAZbD"
+        for="dog"
+      >
+        Dog
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Checkbox /> GIVEN a <CheckboxGroup/> whit disabled props WHEN disabled is not setted
+        THEN should enable all enabled 1`] = `
+<div>
+  <div
+    class="octo-UI-c-PJLV octo-UI-c-PJLV-iNpQip-color-unstyled"
+  >
+    <div
+      class="octo-UI-c-hrAFsB"
+    >
+      <button
+        aria-checked="false"
+        class="octo-UI-c-fwkXIE"
+        data-state="unchecked"
+        id="fish"
+        role="checkbox"
+        type="button"
+        value="fish"
+      />
+      <label
+        class="octo-UI-c-gHWBzz octo-UI-c-kwAZbD"
+        for="fish"
+      >
+        Fish
+      </label>
+    </div>
+    <div
+      class="octo-UI-c-hrAFsB"
+    >
+      <button
+        aria-checked="false"
+        class="octo-UI-c-fwkXIE"
+        data-state="unchecked"
+        id="dog"
+        role="checkbox"
+        type="button"
+        value="dog"
+      />
+      <label
+        class="octo-UI-c-gHWBzz octo-UI-c-kwAZbD"
+        for="dog"
+      >
+        Dog
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Checkbox /> GIVEN a <CheckboxGroup/> whit disabled props WHEN disabled is true
+        THEN should disable all checkboxes 1`] = `
+<div>
+  <div
+    class="octo-UI-c-PJLV octo-UI-c-PJLV-iNpQip-color-unstyled"
+  >
+    <div
+      class="octo-UI-c-hrAFsB"
+    >
+      <button
+        aria-checked="false"
+        class="octo-UI-c-fwkXIE"
+        data-disabled=""
+        data-state="unchecked"
+        disabled=""
+        id="fish"
+        role="checkbox"
+        type="button"
+        value="fish"
+      />
+      <label
+        class="octo-UI-c-gHWBzz octo-UI-c-kwAZbD"
+        for="fish"
+      >
+        Fish
+      </label>
+    </div>
+    <div
+      class="octo-UI-c-hrAFsB"
+    >
+      <button
+        aria-checked="false"
+        class="octo-UI-c-fwkXIE"
+        data-disabled=""
+        data-state="unchecked"
+        disabled=""
+        id="dog"
+        role="checkbox"
+        type="button"
+        value="dog"
+      />
+      <label
+        class="octo-UI-c-gHWBzz octo-UI-c-kwAZbD"
+        for="dog"
+      >
+        Dog
+      </label>
+    </div>
+  </div>
+</div>
+`;
