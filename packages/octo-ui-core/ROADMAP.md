@@ -11,7 +11,8 @@
 ### Core components
 
 - Button ✅
-- Checkbox ⚒️
+- Checkbox ✅
+  - Checkbox with indeterminate state (next features)
 - Input
 - Radio Group ✅
 - Select
