@@ -32,11 +32,12 @@ const CheckboxContext = createContext<CheckboxContextType>(
 
 const CheckboxContextProvider: FC<
   PropsWithChildren<Omit<CheckboxContextProps, "name">>
-> = ({ children, disabled }) => {
+> = ({ children, disabled, defaultValue }) => {
   const stateProps: CheckboxContextProps = {
     ...DEFAULT_CONTEXT_VALUE.state,
     disabled: disabled ?? DEFAULT_CONTEXT_VALUE.state.disabled,
     name: DEFAULT_CONTEXT_NAME_VALUE,
+    defaultValue: defaultValue ?? DEFAULT_CONTEXT_VALUE.state.defaultValue,
   };
 
   const [state, setState] = useState(stateProps);
@@ -53,9 +54,9 @@ const CheckboxContextProvider: FC<
 const CheckboxGroup = forwardRef<
   typeof StyledCheckboxGroup,
   CheckboxGroupProps
->(({ disabled, ...props }, forwardedRef) => {
+>(({ disabled, defaultValue, ...props }, forwardedRef) => {
   return (
-    <CheckboxContextProvider disabled={disabled}>
+    <CheckboxContextProvider disabled={disabled} defaultValue={defaultValue}>
       <StyledCheckboxGroup {...props} ref={forwardedRef} />
     </CheckboxContextProvider>
   );
@@ -74,9 +75,9 @@ const CheckboxIndicator = forwardRef<
 // ========================================================================= //
 
 const CheckboxItem = forwardRef<typeof StyledCheckboxItem, CheckboxItemProps>(
-  ({ disabled: disabledProps, ...props }, forwardedRef) => {
+  ({ disabled: disabledProps, value, ...props }, forwardedRef) => {
     const {
-      state: { name: contextName, disabled: contextDisabled },
+      state: { name: contextName, disabled: contextDisabled, defaultValue },
     } = useContext(CheckboxContext);
 
     if (!contextName) {
@@ -90,8 +91,19 @@ const CheckboxItem = forwardRef<typeof StyledCheckboxItem, CheckboxItemProps>(
       [disabledProps, contextDisabled]
     );
 
+    const defaultChecked = useMemo<boolean>(
+      () => !!defaultValue?.includes(value),
+      [defaultValue, value]
+    );
+
     return (
-      <StyledCheckboxItem {...props} ref={forwardedRef} disabled={disabled}>
+      <StyledCheckboxItem
+        {...props}
+        ref={forwardedRef}
+        disabled={disabled}
+        defaultChecked={defaultChecked}
+        value={value}
+      >
         <CheckboxIndicator>
           <CheckIcon />
           {/* {props.checked === "indeterminate" ? <DividerHorizontalIcon /> : null} */}

@@ -10,11 +10,10 @@ import {
   StyledCheckboxItemLabel
 } from "./styles";
 
-
 export type CheckboxContextProps = {
   disabled: boolean | undefined;
   name: string;
-  // defaultValue: string[];
+  defaultValue: string[] | undefined;
   // value: string[];
   // onValueChange: (value: string[]);
 };
@@ -34,7 +33,12 @@ export type CheckboxGroupProps = HTMLOctoProps<typeof StyledCheckboxGroup> &
 
 export type CheckboxItemProps = HTMLOctoProps<typeof StyledCheckboxItem> &
   OctoVariants<typeof StyledCheckboxItem> &
-  Checkbox.CheckboxProps;
+  Omit<
+    Checkbox.CheckboxProps,
+    "defaultChecked" | "checked" | "onCheckedChange"
+  > & {
+    value: string;
+  };
 
 // ========================================================================= //
 
