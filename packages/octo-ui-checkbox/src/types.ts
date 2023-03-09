@@ -7,7 +7,7 @@ import {
   StyledCheckboxIndicator,
   StyledCheckboxItem,
   StyledCheckboxItemContainer,
-  StyledCheckboxItemLabel
+  StyledCheckboxItemLabel,
 } from "./styles";
 
 export type CheckboxContextProps = {

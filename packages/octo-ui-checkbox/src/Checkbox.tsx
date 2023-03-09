@@ -8,14 +8,14 @@ import {
   useContext,
   useEffect,
   useMemo,
-  useState
+  useState,
 } from "react";
 import {
   StyledCheckboxGroup,
   StyledCheckboxIndicator,
   StyledCheckboxItem,
   StyledCheckboxItemContainer,
-  StyledCheckboxItemLabel
+  StyledCheckboxItemLabel,
 } from "./styles";
 import {
   CheckboxContextProps,
@@ -24,7 +24,7 @@ import {
   CheckboxIndicatorProps,
   CheckboxItemContainerProps,
   CheckboxItemLabelProps,
-  CheckboxItemProps
+  CheckboxItemProps,
 } from "./types";
 import { DEFAULT_CONTEXT_NAME_VALUE, DEFAULT_CONTEXT_VALUE } from "./values";
 
@@ -202,4 +202,3 @@ export {
   StyledCheckboxItemLabel,
   StyledCheckboxItemContainer,
 };
-

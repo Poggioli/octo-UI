@@ -6,7 +6,7 @@ export const DEFAULT_CONTEXT_VALUE: CheckboxContextType = {
     name: "",
     defaultValue: [],
     value: [],
-    onChangeValue: (changeValue: string[]) => {}
+    onChangeValue: (changeValue: string[]) => {},
   },
   setState: () => null,
 };

@@ -4,9 +4,12 @@ import { Button } from "ui";
 
 export default function Docs() {
   return (
-    <Box className={theme} css={{
-      padding: "$9"
-    }}>
+    <Box
+      className={theme}
+      css={{
+        padding: "$9",
+      }}
+    >
       <h1>Docs</h1>
       <Button />
     </Box>

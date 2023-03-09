@@ -3,7 +3,7 @@ import {
   CheckboxGroup,
   CheckboxItem,
   CheckboxItemContainer,
-  CheckboxItemLabel
+  CheckboxItemLabel,
 } from "./Checkbox";
 
 describe("<Checkbox />", () => {
