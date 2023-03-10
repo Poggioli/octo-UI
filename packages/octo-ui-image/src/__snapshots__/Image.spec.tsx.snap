@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Image /> GIVEN a <Image />
+      WHEN render is called
+      THEN should render a <Image /> 1`] = `
+<div>
+  <div
+    data-radix-aspect-ratio-wrapper=""
+    style="position: relative; width: 100%; padding-bottom: 56.25%;"
+  >
+    <div
+      class="octo-UI-c-PJLV"
+      style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px;"
+    >
+      <img
+        alt="Landscape photograph by Tobias Tullius"
+        class="octo-UI-c-kxYyuZ"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Image /> GIVEN a <Image />
+      WHEN render is called
+      THEN should render a <Image /> 2`] = `
+<div>
+  <div
+    data-radix-aspect-ratio-wrapper=""
+    style="position: relative; width: 100%; padding-bottom: 100%;"
+  >
+    <div
+      class="octo-UI-c-PJLV"
+      style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px;"
+    >
+      <img
+        alt="Landscape photograph by Tobias Tullius"
+        class="octo-UI-c-kxYyuZ"
+        src="https://images.unsplash.com/photo-1535025183041-0991a977e25b?w=300&dpr=2&q=80"
+      />
+    </div>
+  </div>
+</div>
+`;
