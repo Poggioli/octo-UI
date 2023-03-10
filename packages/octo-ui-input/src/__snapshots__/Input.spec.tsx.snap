@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> GIVEN a <Input />
+      WHEN render is called
+      THEN should render a <Input /> 1`] = `
+<div>
+  <input
+    class="octo-UI-c-eQegQU octo-UI-c-eQegQU-cQBoFB-size-standard octo-UI-c-eQegQU-dhMCoC-color-unstyled"
+  />
+</div>
+`;
