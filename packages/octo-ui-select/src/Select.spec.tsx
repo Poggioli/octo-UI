@@ -5,7 +5,7 @@ import {
   SelectGroup,
   SelectItem,
   SelectLabelGroup,
-  SelectSeparator
+  SelectSeparator,
 } from "./Select";
 
 describe("<Select />", () => {
