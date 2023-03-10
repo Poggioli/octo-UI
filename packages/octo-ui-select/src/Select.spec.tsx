@@ -5,7 +5,7 @@ import {
   SelectGroup,
   SelectItem,
   SelectLabelGroup,
-  SelectSeparator,
+  SelectSeparator
 } from "./Select";
 
 describe("<Select />", () => {
@@ -167,6 +167,6 @@ describe("<Select />", () => {
   it(`GIVEN a <SelectContent />
       WHEN toString is called
       THEN return a string`, () => {
-    expect(SelectContent.toString()).toBe(".octo-UI-c-krXJdj");
+    expect(SelectContent.toString()).toBe(".octo-UI-c-cjYrgy");
   });
 });
