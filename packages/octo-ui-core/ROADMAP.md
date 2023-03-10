@@ -13,7 +13,7 @@
 - Button ✅
 - Checkbox ✅
   - Checkbox with indeterminate state (next features)
-- Input ⚒️
+- Input ✅
 - Radio Group ✅
 - Select
 - Slider ✅
