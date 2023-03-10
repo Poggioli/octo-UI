@@ -7,7 +7,7 @@ import {
   StyledSelectItem,
   StyledSelectItemIndicator,
   StyledSelectItemText,
-  StyledSelectLabel,
+  StyledSelectLabelGroup,
   StyledSelectPortal,
   StyledSelectRoot,
   StyledSelectScrollDownButton,
@@ -17,11 +17,6 @@ import {
   StyledSelectValue,
   StyledSelectViewport,
 } from "./styles";
-
-export type SelectRootProps = HTMLOctoProps<typeof StyledSelectRoot> &
-  OctoVariants<typeof StyledSelectRoot>;
-
-// ========================================================================= //
 
 export type SelectTriggerProps = HTMLOctoProps<typeof StyledSelectTrigger> &
   OctoVariants<typeof StyledSelectTrigger>;
@@ -33,6 +28,13 @@ export type SelectValueProps = HTMLOctoProps<typeof StyledSelectValue> &
 
 // ========================================================================= //
 
+export type SelectRootProps = HTMLOctoProps<typeof StyledSelectRoot> &
+  OctoVariants<typeof StyledSelectRoot> &
+  SelectTriggerProps &
+  SelectValueProps;
+
+// ========================================================================= //
+
 export type SelectIconProps = HTMLOctoProps<typeof StyledSelectIcon> &
   OctoVariants<typeof StyledSelectIcon>;
 
@@ -40,11 +42,6 @@ export type SelectIconProps = HTMLOctoProps<typeof StyledSelectIcon> &
 
 export type SelectPortalProps = HTMLOctoProps<typeof StyledSelectPortal> &
   OctoVariants<typeof StyledSelectPortal>;
-
-// ========================================================================= //
-
-export type SelectContentProps = HTMLOctoProps<typeof StyledSelectContent> &
-  OctoVariants<typeof StyledSelectContent>;
 
 // ========================================================================= //
 
@@ -89,8 +86,10 @@ export type SelectGroupProps = HTMLOctoProps<typeof StyledSelectGroup> &
 
 // ========================================================================= //
 
-export type SelectLabelProps = HTMLOctoProps<typeof StyledSelectLabel> &
-  OctoVariants<typeof StyledSelectLabel>;
+export type SelectLabelGroupProps = HTMLOctoProps<
+  typeof StyledSelectLabelGroup
+> &
+  OctoVariants<typeof StyledSelectLabelGroup>;
 
 // ========================================================================= //
 
@@ -101,3 +100,13 @@ export type SelectSeparatorProps = HTMLOctoProps<typeof StyledSelectSeparator> &
 
 export type SelectArrowProps = HTMLOctoProps<typeof StyledSelectArrow> &
   OctoVariants<typeof StyledSelectArrow>;
+
+// ========================================================================= //
+
+export type SelectContentProps = HTMLOctoProps<typeof StyledSelectContent> &
+  OctoVariants<typeof StyledSelectContent> &
+  SelectPortalProps &
+  SelectScrollUpButtonProps &
+  SelectViewportProps &
+  SelectScrollDownButtonProps &
+  SelectArrowProps;

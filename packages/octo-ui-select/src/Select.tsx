@@ -7,7 +7,7 @@ import {
   StyledSelectItem,
   StyledSelectItemIndicator,
   StyledSelectItemText,
-  StyledSelectLabel,
+  StyledSelectLabelGroup,
   StyledSelectPortal,
   StyledSelectRoot,
   StyledSelectScrollDownButton,
@@ -25,7 +25,7 @@ import {
   SelectItemIndicatorProps,
   SelectItemProps,
   SelectItemTextProps,
-  SelectLabelProps,
+  SelectLabelGroupProps,
   SelectPortalProps,
   SelectRootProps,
   SelectScrollDownButtonProps,
@@ -41,17 +41,6 @@ const SelectArrow = forwardRef<typeof StyledSelectArrow, SelectArrowProps>(
     return <StyledSelectArrow {...props} ref={forwardedRef} />;
   }
 );
-SelectArrow.toString = () => `.${StyledSelectArrow.className}`;
-
-// ========================================================================= //
-
-const SelectContent = forwardRef<
-  typeof StyledSelectContent,
-  SelectContentProps
->(({ ...props }, forwardedRef) => {
-  return <StyledSelectContent {...props} ref={forwardedRef} />;
-});
-SelectContent.toString = () => `.${StyledSelectContent.className}`;
 
 // ========================================================================= //
 
@@ -69,16 +58,6 @@ const SelectIcon = forwardRef<typeof StyledSelectIcon, SelectIconProps>(
     return <StyledSelectIcon {...props} ref={forwardedRef} />;
   }
 );
-SelectIcon.toString = () => `.${StyledSelectIcon.className}`;
-
-// ========================================================================= //
-
-const SelectItem = forwardRef<typeof StyledSelectItem, SelectItemProps>(
-  ({ ...props }, forwardedRef) => {
-    return <StyledSelectItem {...props} ref={forwardedRef} />;
-  }
-);
-SelectItem.toString = () => `.${StyledSelectItem.className}`;
 
 // ========================================================================= //
 
@@ -88,7 +67,6 @@ const SelectItemIndicator = forwardRef<
 >(({ ...props }, forwardedRef) => {
   return <StyledSelectItemIndicator {...props} ref={forwardedRef} />;
 });
-SelectItemIndicator.toString = () => `.${StyledSelectItemIndicator.className}`;
 
 // ========================================================================= //
 
@@ -98,16 +76,30 @@ const SelectItemText = forwardRef<
 >(({ ...props }, forwardedRef) => {
   return <StyledSelectItemText {...props} ref={forwardedRef} />;
 });
-SelectItemText.toString = () => `.${StyledSelectItemText.className}`;
 
 // ========================================================================= //
 
-const SelectLabel = forwardRef<typeof StyledSelectLabel, SelectLabelProps>(
-  ({ ...props }, forwardedRef) => {
-    return <StyledSelectLabel {...props} ref={forwardedRef} />;
+const SelectItem = forwardRef<typeof StyledSelectItem, SelectItemProps>(
+  ({ children, ...props }, forwardedRef) => {
+    return (
+      <StyledSelectItem {...props} ref={forwardedRef}>
+        <SelectItemText>{children}</SelectItemText>
+        <SelectItemIndicator>OK</SelectItemIndicator>
+      </StyledSelectItem>
+    );
   }
 );
-SelectLabel.toString = () => `.${StyledSelectLabel.className}`;
+SelectItem.toString = () => `.${StyledSelectItem.className}`;
+
+// ========================================================================= //
+
+const SelectLabelGroup = forwardRef<
+  typeof StyledSelectLabelGroup,
+  SelectLabelGroupProps
+>(({ ...props }, forwardedRef) => {
+  return <StyledSelectLabelGroup {...props} ref={forwardedRef} />;
+});
+SelectLabelGroup.toString = () => `.${StyledSelectLabelGroup.className}`;
 
 // ========================================================================= //
 
@@ -116,13 +108,37 @@ const SelectPortal = forwardRef<typeof StyledSelectPortal, SelectPortalProps>(
     return <StyledSelectPortal {...props} ref={forwardedRef} />;
   }
 );
-SelectPortal.toString = () => `.${StyledSelectPortal.className}`;
+
+// ========================================================================= //
+
+const SelectTrigger = forwardRef<
+  typeof StyledSelectTrigger,
+  SelectTriggerProps
+>(({ ...props }, forwardedRef) => {
+  return <StyledSelectTrigger {...props} ref={forwardedRef} />;
+});
+
+// ========================================================================= //
+
+const SelectValue = forwardRef<typeof StyledSelectValue, SelectValueProps>(
+  ({ ...props }, forwardedRef) => {
+    return <StyledSelectValue {...props} ref={forwardedRef} />;
+  }
+);
 
 // ========================================================================= //
 
 const Select = forwardRef<typeof StyledSelectRoot, SelectRootProps>(
-  ({ ...props }, forwardedRef) => {
-    return <StyledSelectRoot {...props} ref={forwardedRef} />;
+  ({ children, placeholder, ...props }, forwardedRef) => {
+    return (
+      <StyledSelectRoot {...props} ref={forwardedRef}>
+        <SelectTrigger>
+          <SelectValue placeholder={placeholder} />
+          <SelectIcon>l</SelectIcon>
+        </SelectTrigger>
+        {children}
+      </StyledSelectRoot>
+    );
   }
 );
 Select.toString = () => `.${StyledSelectRoot.className}`;
@@ -135,8 +151,6 @@ const SelectScrollDownButton = forwardRef<
 >(({ ...props }, forwardedRef) => {
   return <StyledSelectScrollDownButton {...props} ref={forwardedRef} />;
 });
-SelectScrollDownButton.toString = () =>
-  `.${StyledSelectScrollDownButton.className}`;
 
 // ========================================================================= //
 
@@ -146,8 +160,6 @@ const SelectScrollUpButton = forwardRef<
 >(({ ...props }, forwardedRef) => {
   return <StyledSelectScrollUpButton {...props} ref={forwardedRef} />;
 });
-SelectScrollUpButton.toString = () =>
-  `.${StyledSelectScrollUpButton.className}`;
 
 // ========================================================================= //
 
@@ -161,32 +173,31 @@ SelectSeparator.toString = () => `.${StyledSelectSeparator.className}`;
 
 // ========================================================================= //
 
-const SelectTrigger = forwardRef<
-  typeof StyledSelectTrigger,
-  SelectTriggerProps
->(({ ...props }, forwardedRef) => {
-  return <StyledSelectTrigger {...props} ref={forwardedRef} />;
-});
-SelectTrigger.toString = () => `.${StyledSelectTrigger.className}`;
-
-// ========================================================================= //
-
-const SelectValue = forwardRef<typeof StyledSelectValue, SelectValueProps>(
-  ({ ...props }, forwardedRef) => {
-    return <StyledSelectValue {...props} ref={forwardedRef} />;
-  }
-);
-SelectValue.toString = () => `.${StyledSelectValue.className}`;
-
-// ========================================================================= //
-
 const SelectViewport = forwardRef<
   typeof StyledSelectViewport,
   SelectViewportProps
 >(({ ...props }, forwardedRef) => {
   return <StyledSelectViewport {...props} ref={forwardedRef} />;
 });
-SelectViewport.toString = () => `.${StyledSelectViewport.className}`;
+
+// ========================================================================= //
+
+const SelectContent = forwardRef<
+  typeof StyledSelectContent,
+  SelectContentProps
+>(({ children, container, width, height, ...props }, forwardedRef) => {
+  return (
+    <SelectPortal container={container}>
+      <StyledSelectContent {...props} ref={forwardedRef}>
+        <SelectScrollUpButton />
+        <SelectViewport>{children}</SelectViewport>
+        <SelectScrollDownButton />
+        <SelectArrow width={width} height={height} />
+      </StyledSelectContent>
+    </SelectPortal>
+  );
+});
+SelectContent.toString = () => `.${StyledSelectContent.className}`;
 
 export {
   StyledSelectArrow,
@@ -196,7 +207,7 @@ export {
   StyledSelectItem,
   StyledSelectItemIndicator,
   StyledSelectItemText,
-  StyledSelectLabel,
+  StyledSelectLabelGroup,
   StyledSelectPortal,
   StyledSelectRoot,
   StyledSelectScrollDownButton,
@@ -207,20 +218,10 @@ export {
   StyledSelectViewport,
 };
 export {
-  SelectArrow,
   SelectContent,
   SelectGroup,
-  SelectIcon,
   SelectItem,
-  SelectItemIndicator,
-  SelectItemText,
-  SelectLabel,
-  SelectPortal,
+  SelectLabelGroup,
   Select,
-  SelectScrollDownButton,
-  SelectScrollUpButton,
   SelectSeparator,
-  SelectTrigger,
-  SelectValue,
-  SelectViewport,
 };

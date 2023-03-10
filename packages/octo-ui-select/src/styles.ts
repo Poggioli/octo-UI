@@ -69,8 +69,8 @@ StyledSelectGroup.toString = () => `.${StyledSelectGroup.className}`;
 
 // ========================================================================= //
 
-const StyledSelectLabel = styled(Select.Label, {});
-StyledSelectLabel.toString = () => `.${StyledSelectLabel.className}`;
+const StyledSelectLabelGroup = styled(Select.Label, {});
+StyledSelectLabelGroup.toString = () => `.${StyledSelectLabelGroup.className}`;
 
 // ========================================================================= //
 
@@ -96,7 +96,7 @@ export {
   StyledSelectScrollUpButton,
   StyledSelectScrollDownButton,
   StyledSelectGroup,
-  StyledSelectLabel,
+  StyledSelectLabelGroup,
   StyledSelectSeparator,
   StyledSelectArrow,
 };
