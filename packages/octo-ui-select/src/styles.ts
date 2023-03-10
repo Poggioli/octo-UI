@@ -203,7 +203,7 @@ const StyledSelectContent = styled(Select.Content, {
   backgroundColor: "$$backgroundColorContent",
   borderRadius: "$2",
   boxShadow:
-    "0px 10px 38px -10px rgba(22, 23, 24, 0.35), 0px 10px 20px -15px rgba(22, 23, 24, 0.2)",
+    "0px 10px 38px -10px $colors$black7, 0px 10px 20px -15px $colors$black6",
 
   variants: {
     color: {
