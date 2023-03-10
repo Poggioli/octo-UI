@@ -15,7 +15,7 @@
   - Checkbox with indeterminate state (next features)
 - Input ✅
 - Radio Group ✅
-- Select ⚒️
+- Select ✅
 - Slider ✅
 - Switch ✅
 - Toggle Group ✅
