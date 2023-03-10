@@ -1,5 +1,10 @@
 import { forwardRef } from "@octo-ui/core";
 import {
+  CheckIcon,
+  ChevronDownIcon,
+  ChevronUpIcon,
+} from "@radix-ui/react-icons";
+import {
   StyledSelectArrow,
   StyledSelectContent,
   StyledSelectGroup,
@@ -84,7 +89,9 @@ const SelectItem = forwardRef<typeof StyledSelectItem, SelectItemProps>(
     return (
       <StyledSelectItem {...props} ref={forwardedRef}>
         <SelectItemText>{children}</SelectItemText>
-        <SelectItemIndicator>OK</SelectItemIndicator>
+        <SelectItemIndicator>
+          <CheckIcon />
+        </SelectItemIndicator>
       </StyledSelectItem>
     );
   }
@@ -129,12 +136,14 @@ const SelectValue = forwardRef<typeof StyledSelectValue, SelectValueProps>(
 // ========================================================================= //
 
 const Select = forwardRef<typeof StyledSelectRoot, SelectRootProps>(
-  ({ children, placeholder, ...props }, forwardedRef) => {
+  ({ children, placeholder, size, color, ...props }, forwardedRef) => {
     return (
       <StyledSelectRoot {...props} ref={forwardedRef}>
-        <SelectTrigger>
+        <SelectTrigger color={color} size={size}>
           <SelectValue placeholder={placeholder} />
-          <SelectIcon>l</SelectIcon>
+          <SelectIcon>
+            <ChevronDownIcon />
+          </SelectIcon>
         </SelectTrigger>
         {children}
       </StyledSelectRoot>
@@ -189,9 +198,13 @@ const SelectContent = forwardRef<
   return (
     <SelectPortal container={container}>
       <StyledSelectContent {...props} ref={forwardedRef}>
-        <SelectScrollUpButton />
+        <SelectScrollUpButton>
+          <ChevronUpIcon />
+        </SelectScrollUpButton>
         <SelectViewport>{children}</SelectViewport>
-        <SelectScrollDownButton />
+        <SelectScrollDownButton>
+          <ChevronDownIcon />
+        </SelectScrollDownButton>
         <SelectArrow width={width} height={height} />
       </StyledSelectContent>
     </SelectPortal>

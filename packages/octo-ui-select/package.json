@@ -24,6 +24,7 @@
     "@octo-ui/core": "*"
   },
   "dependencies": {
-    "@radix-ui/react-select": "^1.2.1"
+    "@radix-ui/react-select": "^1.2.1",
+    "@radix-ui/react-icons": "^1.2.0"
   }
 }
