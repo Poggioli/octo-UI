@@ -11,4 +11,3 @@ Input.toString = () => `.${StyledInput.className}`;
 
 export { StyledInput };
 export { Input };
-
