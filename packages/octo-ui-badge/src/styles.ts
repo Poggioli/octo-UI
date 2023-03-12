@@ -6,6 +6,8 @@ const StyledBadgeContainer = styled("span", {
 });
 StyledBadgeContainer.toString = () => `.${StyledBadgeContainer.className}`;
 
+// ========================================================================= //
+
 const StyledBadge = styled("span", {
   alignItems: "center",
   borderRadius: "$pill",
