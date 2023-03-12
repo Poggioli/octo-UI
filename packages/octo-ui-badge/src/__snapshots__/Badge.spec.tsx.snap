@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Badge /> GIVEN a <Badge /> component
+      WHEN render component
+      SHOULD occurs render normaly 1`] = `
+<div>
+  <span
+    class="octo-UI-c-fONfOB"
+  >
+    <span
+      class="octo-UI-c-dqSAaa octo-UI-c-dqSAaa-czsSGP-horizontalPosition-right octo-UI-c-dqSAaa-gCYbFg-verticalPosition-top octo-UI-c-dqSAaa-ixIDnb-color-unstyled octo-UI-c-dqSAaa-eatZjV-cv"
+    >
+      10
+    </span>
+    <button>
+      Button badge
+    </button>
+  </span>
+</div>
+`;
+
+exports[`<Badge /> dot props GIVEN a <Badge /> component
+        WHEN dot props is false
+        THEN should show the count value 1`] = `
+<div>
+  <span
+    class="octo-UI-c-fONfOB"
+  >
+    <span
+      class="octo-UI-c-dqSAaa octo-UI-c-dqSAaa-czsSGP-horizontalPosition-right octo-UI-c-dqSAaa-gCYbFg-verticalPosition-top octo-UI-c-dqSAaa-ixIDnb-color-unstyled octo-UI-c-dqSAaa-eatZjV-cv"
+    >
+      10
+    </span>
+    <button>
+      Button badge
+    </button>
+  </span>
+</div>
+`;
+
+exports[`<Badge /> dot props GIVEN a <Badge /> component
+        WHEN dot props is true
+        THEN should NOT show the count value 1`] = `
+<div>
+  <span
+    class="octo-UI-c-fONfOB"
+  >
+    <span
+      class="octo-UI-c-dqSAaa octo-UI-c-dqSAaa-czsSGP-horizontalPosition-right octo-UI-c-dqSAaa-gCYbFg-verticalPosition-top octo-UI-c-dqSAaa-ixIDnb-color-unstyled octo-UI-c-dqSAaa-cyzDYT-dot-true octo-UI-c-dqSAaa-eatZjV-cv"
+    />
+    <button>
+      Button badge
+    </button>
+  </span>
+</div>
+`;
+
+exports[`<Badge /> maxCount props GIVEN a <Badge /> component
+        WHEN maxCount is equal to 99 
+        AND count props is less than 99
+        THEN should show the count value 1`] = `
+<div>
+  <span
+    class="octo-UI-c-fONfOB"
+  >
+    <span
+      class="octo-UI-c-dqSAaa octo-UI-c-dqSAaa-czsSGP-horizontalPosition-right octo-UI-c-dqSAaa-gCYbFg-verticalPosition-top octo-UI-c-dqSAaa-ixIDnb-color-unstyled octo-UI-c-dqSAaa-eatZjV-cv"
+    >
+      3
+    </span>
+    <button>
+      Button badge
+    </button>
+  </span>
+</div>
+`;
+
+exports[`<Badge /> maxCount props GIVEN a <Badge /> component
+      WHEN maxCount is equal to 99 
+      AND count props is greater than 99
+      THEN should render the "99+" 1`] = `
+<div>
+  <span
+    class="octo-UI-c-fONfOB"
+  >
+    <span
+      class="octo-UI-c-dqSAaa octo-UI-c-dqSAaa-czsSGP-horizontalPosition-right octo-UI-c-dqSAaa-gCYbFg-verticalPosition-top octo-UI-c-dqSAaa-ixIDnb-color-unstyled octo-UI-c-dqSAaa-eatZjV-cv"
+    >
+      99+
+    </span>
+    <button>
+      Button badge
+    </button>
+  </span>
+</div>
+`;
+
+exports[`<Badge /> showZero props GIVEN a <Badge /> component with count 0
+        AND showZero props is true
+        THEN should show the count value 1`] = `
+<div>
+  <span
+    class="octo-UI-c-fONfOB"
+  >
+    <span
+      class="octo-UI-c-dqSAaa octo-UI-c-dqSAaa-czsSGP-horizontalPosition-right octo-UI-c-dqSAaa-gCYbFg-verticalPosition-top octo-UI-c-dqSAaa-ixIDnb-color-unstyled octo-UI-c-dqSAaa-eatZjV-cv"
+    >
+      0
+    </span>
+    <button>
+      Button badge
+    </button>
+  </span>
+</div>
+`;
+
+exports[`<Badge /> showZero props GIVEN a <Badge /> component with count 0
+        WHEN showZero props is false
+        THEN should NOT show the count value 1`] = `
+<div>
+  <span
+    class="octo-UI-c-fONfOB"
+  >
+    <button>
+      Button badge
+    </button>
+  </span>
+</div>
+`;
