@@ -18,11 +18,7 @@ const Badge = forwardRef<typeof StyledBadge, BadgeProps>(
     return (
       <StyledBadgeContainer>
         {showBadge ? (
-          <StyledBadge
-            {...props}
-            ref={forwardedRef}
-            dot={dot}
-          >
+          <StyledBadge {...props} ref={forwardedRef} dot={dot}>
             {!dot ? value : null}
           </StyledBadge>
         ) : null}
@@ -35,4 +31,3 @@ Badge.toString = () => `${StyledBadge.className}`;
 
 export { StyledBadgeContainer, StyledBadge };
 export { Badge };
-

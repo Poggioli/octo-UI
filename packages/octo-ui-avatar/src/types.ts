@@ -2,7 +2,7 @@ import { HTMLOctoProps, OctoVariants } from "@octo-ui/core";
 import {
   StyledAvatarFallback,
   StyledAvatarImage,
-  StyledAvatarRoot
+  StyledAvatarRoot,
 } from "./styles";
 
 type AvatarImageProps = HTMLOctoProps<typeof StyledAvatarImage> &

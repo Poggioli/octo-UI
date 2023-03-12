@@ -2,7 +2,7 @@ import { forwardRef } from "@octo-ui/core";
 import {
   StyledAvatarFallback,
   StyledAvatarImage,
-  StyledAvatarRoot
+  StyledAvatarRoot,
 } from "./styles";
 import { AvatarProps } from "./types";
 
@@ -22,4 +22,3 @@ Avatar.toString = () => `.${StyledAvatarRoot.className}`;
 
 export { StyledAvatarRoot, StyledAvatarImage, StyledAvatarFallback };
 export { Avatar };
-
