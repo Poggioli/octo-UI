@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Avatar /> GIVEN a <Avatar />
+      WHEN render is called
+      THEN should render a <Avatar /> 1`] = `
+<div>
+  <span
+    class="octo-UI-c-lmFHv octo-UI-c-lmFHv-bvIKlo-size-standard"
+  >
+    <span
+      class="octo-UI-c-caKoxB octo-UI-c-caKoxB-ehJAYl-color-unstyled"
+    >
+      NL
+    </span>
+  </span>
+</div>
+`;
+
+exports[`<Avatar /> GIVEN a <Avatar />
+      WHEN render is fallback
+      THEN should render a "NL" string 1`] = `
+<div>
+  <span
+    class="octo-UI-c-lmFHv octo-UI-c-lmFHv-bvIKlo-size-standard"
+  >
+    <span
+      class="octo-UI-c-caKoxB octo-UI-c-caKoxB-ehJAYl-color-unstyled"
+    >
+      NL
+    </span>
+  </span>
+</div>
+`;

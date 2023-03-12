@@ -25,7 +25,7 @@
 ### Data display components
 
 - Aspect Ratio (Image) ✅
-- Avatar
+- Avatar ✅
 - Badge
 - Collapsible
 - Dialog
