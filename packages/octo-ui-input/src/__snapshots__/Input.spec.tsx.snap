@@ -5,7 +5,7 @@ exports[`<Input /> GIVEN a <Input />
       THEN should render a <Input /> 1`] = `
 <div>
   <input
-    class="octo-UI-c-eQegQU octo-UI-c-eQegQU-cQBoFB-size-standard octo-UI-c-eQegQU-dhMCoC-color-unstyled"
+    class="octo-UI-c-eQegQU octo-UI-c-eQegQU-cQBoFB-size-standard octo-UI-c-eQegQU-eDvoAI-color-unstyled"
   />
 </div>
 `;
