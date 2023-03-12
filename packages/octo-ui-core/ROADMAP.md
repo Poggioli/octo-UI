@@ -26,7 +26,7 @@
 
 - Aspect Ratio (Image) ✅
 - Avatar ✅
-- Badge
+- Badge ⚒️
 - Collapsible
 - Dialog
 - Heading ✅
