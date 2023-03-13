@@ -49,4 +49,10 @@ const CollapsibleContent = forwardRef<
 });
 CollapsibleContent.toString = () => `.${StyledCollapsibleContent.className}`;
 
+export {
+  StyledCollapsibleTrigger,
+  StyledCollapsibleRoot,
+  StyledCollapsibleContent,
+};
 export { CollapsibleTrigger, Collapsible, CollapsibleContent };
+

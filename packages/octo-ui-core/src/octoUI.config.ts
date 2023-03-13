@@ -5,7 +5,7 @@ import {
   orange,
   red,
   slate,
-  whiteA,
+  whiteA
 } from "@radix-ui/colors";
 import type * as Stitches from "@stitches/react";
 import { createStitches } from "@stitches/react";
@@ -375,7 +375,7 @@ export const resetCssStyles = globalCss({
   },
 
   body: {
-    background: "$background-app",
+    background: "$colors$grey1",
     lineHeight: "1",
     scrollBehavior: "smooth",
     textRendering: "optimizeSpeed",
