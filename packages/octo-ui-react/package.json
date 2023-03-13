@@ -1,0 +1,52 @@
+{
+  "name": "@octo-ui/react",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "author": "Poggioli",
+  "private": false,
+  "license": "UNLICENSED",
+  "scripts": {
+    "lint": "eslint \"**/*.ts*\"",
+    "test": "jest",
+    "build": "tsup --config ./tsup.config.ts",
+    "clear": "rimraf .turbo coverage node_modules dist"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "*",
+    "tsconfig": "*",
+    "typescript": "4.5.2"
+  },
+  "peerDependencies": {
+    "@octo-ui/core": "*"
+  },
+  "dependencies": {
+    "@octo-ui/avatar": "*",
+    "@octo-ui/badge": "*",
+    "@octo-ui/box": "*",
+    "@octo-ui/button": "*",
+    "@octo-ui/checkbox": "*",
+    "@octo-ui/collapsible": "*",
+    "@octo-ui/container": "*",
+    "@octo-ui/dialog": "*",
+    "@octo-ui/flex": "*",
+    "@octo-ui/heading": "*",
+    "@octo-ui/hover-card": "*",
+    "@octo-ui/image": "*",
+    "@octo-ui/input": "*",
+    "@octo-ui/label": "*",
+    "@octo-ui/paragraph": "*",
+    "@octo-ui/popover": "*",
+    "@octo-ui/radio": "*",
+    "@octo-ui/scroll-area": "*",
+    "@octo-ui/select": "*",
+    "@octo-ui/slider": "*",
+    "@octo-ui/switch": "*",
+    "@octo-ui/text": "*",
+    "@octo-ui/title": "*",
+    "@octo-ui/toggle-group": "*"
+  }
+}

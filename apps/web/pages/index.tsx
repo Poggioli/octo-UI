@@ -1,6 +1,5 @@
-import { Box } from "@octo-ui/box";
 import { theme } from "@octo-ui/core";
-import { Button } from "ui";
+import { Box, Button } from "@octo-ui/react";
 
 export default function Web() {
   return (
@@ -11,7 +10,7 @@ export default function Web() {
       }}
     >
       <h1>Web</h1>
-      <Button />
+      <Button>Test</Button>
     </Box>
   );
 }
