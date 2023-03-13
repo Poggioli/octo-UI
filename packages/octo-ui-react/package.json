@@ -10,7 +10,6 @@
   "license": "UNLICENSED",
   "scripts": {
     "lint": "eslint \"**/*.ts*\"",
-    "test": "jest",
     "build": "tsup --config ./tsup.config.ts",
     "clear": "rimraf .turbo coverage node_modules dist"
   },
