@@ -2,12 +2,12 @@ import { forwardRef } from "@octo-ui/core";
 import {
   StyledCollapsibleContent,
   StyledCollapsibleRoot,
-  StyledCollapsibleTrigger
+  StyledCollapsibleTrigger,
 } from "./styles";
 import {
   CollapsibleContentProps,
   CollapsibleProps,
-  CollapsibleTriggerProps
+  CollapsibleTriggerProps,
 } from "./types";
 
 const CollapsibleTrigger = forwardRef<
@@ -55,4 +55,3 @@ export {
   StyledCollapsibleContent,
 };
 export { CollapsibleTrigger, Collapsible, CollapsibleContent };
-

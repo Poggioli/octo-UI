@@ -2,7 +2,7 @@ import { HTMLOctoProps, OctoVariants } from "@octo-ui/core";
 import {
   StyledCollapsibleContent,
   StyledCollapsibleRoot,
-  StyledCollapsibleTrigger
+  StyledCollapsibleTrigger,
 } from "./styles";
 
 export type CollapsibleProps = HTMLOctoProps<typeof StyledCollapsibleRoot> &

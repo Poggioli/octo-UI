@@ -9,7 +9,7 @@ import {
   StyledDialogPortal,
   StyledDialogRoot,
   StyledDialogTitle,
-  StyledDialogTrigger
+  StyledDialogTrigger,
 } from "./styles";
 
 export type DialogProps = HTMLOctoProps<typeof StyledDialogRoot> &

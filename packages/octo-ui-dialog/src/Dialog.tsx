@@ -10,7 +10,7 @@ import {
   StyledDialogPortal,
   StyledDialogRoot,
   StyledDialogTitle,
-  StyledDialogTrigger
+  StyledDialogTrigger,
 } from "./styles";
 import {
   DialogCloseProps,
@@ -20,7 +20,7 @@ import {
   DialogPortalProps,
   DialogProps,
   DialogTitleProps,
-  DialogTriggerProps
+  DialogTriggerProps,
 } from "./types";
 
 const Dialog = forwardRef<typeof StyledDialogRoot, DialogProps>(
@@ -64,7 +64,14 @@ const DialogContent = forwardRef<
   DialogContentProps
 >(
   (
-    { children, forceMountPortal, forceMountOverlay, container, blur, ...props },
+    {
+      children,
+      forceMountPortal,
+      forceMountOverlay,
+      container,
+      blur,
+      ...props
+    },
     forwardedRef
   ) => {
     return (
@@ -151,4 +158,3 @@ export {
   DialogTitle,
   DialogDescription,
 };
-
