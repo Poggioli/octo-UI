@@ -24,6 +24,8 @@
     "@octo-ui/core": "*"
   },
   "dependencies": {
+    "@octo-ui/heading": "*",
+    "@octo-ui/paragraph": "*",
     "@radix-ui/react-dialog": "^1.0.3"
   }
 }

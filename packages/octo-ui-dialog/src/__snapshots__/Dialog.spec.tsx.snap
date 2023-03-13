@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Dialog /> GIVEN a <Dialog />
+      WHEN render is called
+      THEN should render a <Dialog /> 1`] = `
+<div
+  aria-hidden="true"
+  data-aria-hidden="true"
+>
+  <button
+    aria-controls="radix-:r0:"
+    aria-expanded="true"
+    aria-haspopup="dialog"
+    class="octo-UI-c-fDiieJ"
+    data-state="open"
+    type="button"
+  >
+    Trigger
+  </button>
+</div>
+`;
+
+exports[`<Dialog /> GIVEN a <Dialog />
+      WHEN render is called
+      THEN should render a <Dialog /> 2`] = `
+<div>
+  <button
+    aria-controls="radix-:r3:"
+    aria-expanded="false"
+    aria-haspopup="dialog"
+    class="octo-UI-c-fDiieJ"
+    data-state="closed"
+    type="button"
+  >
+    Trigger
+  </button>
+</div>
+`;
