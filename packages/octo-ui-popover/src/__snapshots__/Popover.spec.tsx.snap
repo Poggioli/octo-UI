@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Popover /> GIVEN a <Popover />
+      WHEN render is called
+      THEN should render a <Popover /> 1`] = `
+<div>
+  <button
+    aria-controls="radix-:r0:"
+    aria-expanded="true"
+    aria-haspopup="dialog"
+    class="octo-UI-c-PJLV"
+    data-state="open"
+    type="button"
+  >
+    Trigger
+  </button>
+  <button
+    class="octo-UI-c-PJLV"
+  >
+    Anchor
+  </button>
+</div>
+`;
