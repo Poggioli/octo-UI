@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HoverCard /> GIVEN a <HoverCard />
+      WHEN render is called
+      THEN should render a <HoverCard /> 1`] = `
+<div>
+  <button
+    class="octo-UI-c-PJLV"
+    data-state="open"
+  >
+    Trigger
+  </button>
+</div>
+`;
+
+exports[`<HoverCard /> GIVEN a <HoverCard />
+      WHEN render is called
+      THEN should render a <HoverCard /> 2`] = `
+<div>
+  <button
+    class="octo-UI-c-PJLV"
+    data-state="closed"
+  >
+    Trigger
+  </button>
+</div>
+`;
