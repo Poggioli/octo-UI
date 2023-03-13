@@ -33,7 +33,7 @@
 - Hover Card ✅
 - Label ✅
 - Paragraph ✅
-- Popover
+- Popover ⚒️
 - Separator
 - Tag
 - Table
