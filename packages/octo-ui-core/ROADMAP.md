@@ -28,7 +28,7 @@
 - Avatar ✅
 - Badge ✅
 - Collapsible ✅
-- Dialog
+- Dialog ⚒️
 - Heading ✅
 - Hover Card
 - Label ✅
