@@ -43,6 +43,7 @@
     "@octo-ui/radio": "*",
     "@octo-ui/scroll-area": "*",
     "@octo-ui/select": "*",
+    "@octo-ui/separator": "*",
     "@octo-ui/slider": "*",
     "@octo-ui/switch": "*",
     "@octo-ui/text": "*",

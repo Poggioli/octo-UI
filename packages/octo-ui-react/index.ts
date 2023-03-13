@@ -17,6 +17,7 @@ export * from "@octo-ui/popover";
 export * from "@octo-ui/radio";
 export * from "@octo-ui/scroll-area";
 export * from "@octo-ui/select";
+export * from "@octo-ui/separator";
 export * from "@octo-ui/slider";
 export * from "@octo-ui/switch";
 export * from "@octo-ui/text";

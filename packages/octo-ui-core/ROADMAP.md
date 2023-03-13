@@ -34,7 +34,7 @@
 - Label ✅
 - Paragraph ✅
 - Popover ✅
-- Separator
+- Separator ⚒️
 - Tag
 - Table
 - Text ✅
