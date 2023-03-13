@@ -4,14 +4,14 @@ import {
   StyledHoverCardContent,
   StyledHoverCardPortal,
   StyledHoverCardRoot,
-  StyledHoverCardTrigger
+  StyledHoverCardTrigger,
 } from "./styles";
 import {
   HoverCardArrowProps,
   HoverCardContentProps,
   HoverCardPortalProps,
   HoverCardProps,
-  HoverCardTriggerProps
+  HoverCardTriggerProps,
 } from "./types";
 
 const HoverCard = forwardRef<typeof StyledHoverCardRoot, HoverCardProps>(
@@ -96,4 +96,3 @@ export {
   StyledHoverCardTrigger,
 };
 export { HoverCard, HoverCardTrigger, HoverCardContent };
-

@@ -4,7 +4,7 @@ import {
   StyledHoverCardContent,
   StyledHoverCardPortal,
   StyledHoverCardRoot,
-  StyledHoverCardTrigger
+  StyledHoverCardTrigger,
 } from "./styles";
 
 export type HoverCardProps = HTMLOctoProps<typeof StyledHoverCardRoot> &
@@ -36,5 +36,5 @@ export type HoverCardContentProps = HTMLOctoProps<
   Omit<HoverCardPortalProps, "forceMount"> &
   HoverCardArrowProps & {
     forceMountPortal?: true;
-    hasArrow?: boolean
+    hasArrow?: boolean;
   };
