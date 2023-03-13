@@ -11,6 +11,6 @@ const StyledSeparatorRoot = styled(Separator.Root, {
     width: "$1",
   },
 });
-StyledSeparatorRoot.toString = () => `.${StyledSeparatorRoot.className}`
+StyledSeparatorRoot.toString = () => `.${StyledSeparatorRoot.className}`;
 
 export { StyledSeparatorRoot };

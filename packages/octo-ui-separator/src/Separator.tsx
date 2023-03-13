@@ -16,4 +16,3 @@ Separator.toString = () => `.${StyledSeparatorRoot.className}`;
 
 export { StyledSeparatorRoot };
 export { Separator };
-
