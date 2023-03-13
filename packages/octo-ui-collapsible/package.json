@@ -24,9 +24,6 @@
     "@octo-ui/core": "*"
   },
   "dependencies": {
-    "@octo-ui/label": "*",
-    "@radix-ui/react-checkbox": "^1.0.2",
-    "@radix-ui/react-collapsible": "^1.0.2",
-    "@radix-ui/react-icons": "^1.2.0"
+    "@radix-ui/react-collapsible": "^1.0.2"
   }
 }
