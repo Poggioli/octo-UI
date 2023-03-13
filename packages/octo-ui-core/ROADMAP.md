@@ -30,7 +30,7 @@
 - Collapsible ✅
 - Dialog ✅
 - Heading ✅
-- Hover Card
+- Hover Card ⚒️
 - Label ✅
 - Paragraph ✅
 - Popover
