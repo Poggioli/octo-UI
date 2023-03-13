@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Collapsible /> GIVEN a <Collapsible />
+      WHEN render is called
+      THEN should render a <Collapsible /> 1`] = `
+<div>
+  <div
+    class="octo-UI-c-PJLV"
+    data-state="closed"
+  >
+    <button
+      aria-controls="radix-:r0:"
+      aria-expanded="false"
+      class="octo-UI-c-PJLV"
+      data-state="closed"
+      type="button"
+    >
+      Trigger
+    </button>
+    <div
+      class="octo-UI-c-buTLZQ"
+      data-state="closed"
+      hidden=""
+      id="radix-:r0:"
+      style=""
+    />
+  </div>
+</div>
+`;
+
+exports[`<Collapsible /> GIVEN a <Collapsible />
+      WHEN render is called
+      THEN should render a <Collapsible /> 2`] = `
+<div>
+  <div
+    class="octo-UI-c-PJLV"
+    data-state="open"
+  >
+    <button
+      aria-controls="radix-:r1:"
+      aria-expanded="true"
+      class="octo-UI-c-PJLV"
+      data-state="open"
+      type="button"
+    >
+      Trigger
+    </button>
+    <div
+      class="octo-UI-c-buTLZQ"
+      data-state="open"
+      id="radix-:r1:"
+      style="transition-duration: 0s; animation-name: none;"
+    >
+      <p>
+        Content p
+      </p>
+      <span>
+        Content span
+      </span>
+    </div>
+  </div>
+</div>
+`;
