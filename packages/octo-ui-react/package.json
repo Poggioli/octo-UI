@@ -47,6 +47,7 @@
     "@octo-ui/switch": "*",
     "@octo-ui/text": "*",
     "@octo-ui/title": "*",
-    "@octo-ui/toggle-group": "*"
+    "@octo-ui/toggle-group": "*",
+    "@octo-ui/tooltip": "*"
   }
 }
