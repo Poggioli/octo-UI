@@ -23,5 +23,7 @@
   "peerDependencies": {
     "@octo-ui/core": "*"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@radix-ui/react-tooltip": "^1.0.5"
+  }
 }
