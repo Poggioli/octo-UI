@@ -7,7 +7,7 @@ import {
   CardDescriptionProps,
   CardProps,
   CardSubtitleProps,
-  CardTitleProps
+  CardTitleProps,
 } from "./types";
 
 const Card = forwardRef<typeof StyledCard, CardProps>(
@@ -98,4 +98,3 @@ export {
   StyledFlex as StyledCardContainerAction,
 };
 export { Card, CardTitle, CardSubtitle, CardDescription, CardContainerAction };
-

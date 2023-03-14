@@ -4,7 +4,7 @@ import {
   CardContainerAction,
   CardDescription,
   CardSubtitle,
-  CardTitle
+  CardTitle,
 } from "./Card";
 
 describe("<Card />", () => {
@@ -41,7 +41,7 @@ describe("<Card />", () => {
       THEN return a string`, () => {
     expect(CardDescription.toString()).toBe(".octo-UI-c-gWerhV");
   });
-  
+
   it(`GIVEN a <CardSubtitle />
       WHEN toString is called
       THEN return a string`, () => {
