@@ -249,7 +249,7 @@ const StyledButton = styled(DEFAULT_TAG_BUTTON, {
       },
       solid: {
         backgroundColor: "$$backgroundColorSolidNormal",
-        borderWidth: "none",
+        borderWidth: "0",
         color: "$$textColorSolidNormal",
 
         "@hover": {
