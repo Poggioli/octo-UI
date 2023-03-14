@@ -39,7 +39,7 @@
 - Table
 - Text ✅
 - Title ✅
-- Tooltip ⚒️
+- Tooltip ✅
 
 <br>
 
