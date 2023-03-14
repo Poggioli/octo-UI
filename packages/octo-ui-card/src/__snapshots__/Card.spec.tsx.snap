@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Card /> GIVEN a <Card />
+      WHEN render is called
+      THEN should render a <Card /> 1`] = `
+<div>
+  <div
+    class="octo-UI-c-gqwkJN octo-UI-c-hXwDLj octo-UI-c-gqwkJN-iTKOFX-flexDirection-column octo-UI-c-gqwkJN-eJbcS-flexWrap-initial octo-UI-c-gqwkJN-fVplCG-justifyContent-initial octo-UI-c-gqwkJN-ebbZJG-alignItems-initial octo-UI-c-gqwkJN-dYGMXV-alignContent-initial octo-UI-c-gqwkJN-bexZoo-alignSelf-initial octo-UI-c-hXwDLj-crwvoE-shaded-true octo-UI-c-hXwDLj-gwqsjS-bordered-true"
+  >
+    <h3
+      class="octo-UI-c-gWerhV octo-UI-c-gWerhV-cMAlre-size-6 octo-UI-c-gWerhV-ikjbMWW-css"
+    >
+      CardTitle
+    </h3>
+    <h4
+      class="octo-UI-c-gWerhV octo-UI-c-gWerhV-EDrvg-size-1 octo-UI-c-gWerhV-ikbIwwR-css"
+    >
+      CardSubtitle
+    </h4>
+    <p
+      class="octo-UI-c-gWerhV octo-UI-c-gWerhV-cBLpOj-size-2 octo-UI-c-gWerhV-ikbIwwR-css"
+    >
+      Card Description
+    </p>
+    <div
+      class="octo-UI-c-gqwkJN octo-UI-c-gqwkJN-djZMnX-flexDirection-initial octo-UI-c-gqwkJN-XefLA-flexWrap-wrap octo-UI-c-gqwkJN-awKDG-justifyContent-flexStart octo-UI-c-gqwkJN-ebbZJG-alignItems-initial octo-UI-c-gqwkJN-dYGMXV-alignContent-initial octo-UI-c-gqwkJN-bexZoo-alignSelf-initial"
+    >
+      <button>
+        CardContainerAction Button
+      </button>
+    </div>
+  </div>
+</div>
+`;

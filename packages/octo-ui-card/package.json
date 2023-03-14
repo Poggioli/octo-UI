@@ -23,5 +23,8 @@
   "peerDependencies": {
     "@octo-ui/core": "*"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@octo-ui/flex": "*",
+    "@octo-ui/text": "*"
+  }
 }
