@@ -22,13 +22,31 @@ const TooltipProvider = forwardRef<
 >(({ ...props }, forwardedRef) => {
   return <StyledTooltipProvider {...props} ref={forwardedRef} />;
 });
-TooltipProvider.toString = () => `.${StyledTooltipProvider.className}`;
 
 // ========================================================================= //
 
 const Tooltip = forwardRef<typeof StyledTooltipRoot, TooltipProps>(
-  ({ ...props }, forwardedRef) => {
-    return <StyledTooltipRoot {...props} ref={forwardedRef} />;
+  (
+    {
+      children,
+      delayDuration,
+      skipDelayDuration,
+      disableHoverableContent,
+      ...props
+    },
+    forwardedRef
+  ) => {
+    return (
+      <TooltipProvider
+        delayDuration={delayDuration}
+        skipDelayDuration={skipDelayDuration}
+        disableHoverableContent={disableHoverableContent}
+      >
+        <StyledTooltipRoot {...props} ref={forwardedRef}>
+          {children}
+        </StyledTooltipRoot>
+      </TooltipProvider>
+    );
   }
 );
 Tooltip.toString = () => `.${StyledTooltipRoot.className}`;
@@ -39,7 +57,7 @@ const TooltipTrigger = forwardRef<
   typeof StyledTooltipTrigger,
   TooltipTriggerProps
 >(({ ...props }, forwardedRef) => {
-  return <StyledTooltipTrigger {...props} ref={forwardedRef} />;
+  return <StyledTooltipTrigger {...props} ref={forwardedRef} asChild />;
 });
 TooltipTrigger.toString = () => `.${StyledTooltipTrigger.className}`;
 
@@ -51,17 +69,6 @@ const TooltipPortal = forwardRef<
 >(({ ...props }, forwardedRef) => {
   return <StyledTooltipPortal {...props} ref={forwardedRef} />;
 });
-TooltipPortal.toString = () => `.${StyledTooltipPortal.className}`;
-
-// ========================================================================= //
-
-const TooltipContent = forwardRef<
-  typeof StyledTooltipContent,
-  TooltipContentProps
->(({ ...props }, forwardedRef) => {
-  return <StyledTooltipContent {...props} ref={forwardedRef} />;
-});
-TooltipContent.toString = () => `.${StyledTooltipContent.className}`;
 
 // ========================================================================= //
 
@@ -70,7 +77,42 @@ const TooltipArrow = forwardRef<typeof StyledTooltipArrow, TooltipArrowProps>(
     return <StyledTooltipArrow {...props} ref={forwardedRef} />;
   }
 );
-TooltipArrow.toString = () => `.${StyledTooltipArrow.className}`;
+
+// ========================================================================= //
+
+const TooltipContent = forwardRef<
+  typeof StyledTooltipContent,
+  TooltipContentProps
+>(
+  (
+    {
+      children,
+      forceMountPortal,
+      container,
+      height,
+      width,
+      collisionPadding = 20,
+      sideOffset = 5,
+      ...props
+    },
+    forwardedRef
+  ) => {
+    return (
+      <TooltipPortal forceMount={forceMountPortal} container={container}>
+        <StyledTooltipContent
+          {...props}
+          ref={forwardedRef}
+          collisionPadding={collisionPadding}
+          sideOffset={sideOffset}
+        >
+          {children}
+          <TooltipArrow height={height} width={width} />
+        </StyledTooltipContent>
+      </TooltipPortal>
+    );
+  }
+);
+TooltipContent.toString = () => `.${StyledTooltipContent.className}`;
 
 export {
   StyledTooltipArrow,

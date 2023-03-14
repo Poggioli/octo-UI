@@ -24,6 +24,7 @@
     "@octo-ui/core": "*"
   },
   "dependencies": {
-    "@radix-ui/react-tooltip": "^1.0.5"
+    "@radix-ui/react-tooltip": "^1.0.5",
+    "@octo-ui/text": "*"
   }
 }

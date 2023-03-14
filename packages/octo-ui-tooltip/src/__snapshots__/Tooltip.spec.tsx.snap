@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Tooltip /> GIVEN a <Tooltip />
+      WHEN render is called
+      THEN should render a <Tooltip /> 1`] = `
+<div>
+  <button
+    class="octo-UI-c-PJLV"
+    data-state="closed"
+  >
+    Trigger
+  </button>
+</div>
+`;
+
+exports[`<Tooltip /> GIVEN a <Tooltip />
+      WHEN trigger is hovered
+      THEN should render a tooltip role 1`] = `
+<body>
+  <div>
+    <button
+      aria-describedby="radix-:r1:"
+      class="octo-UI-c-PJLV"
+      data-state="instant-open"
+    >
+      Trigger
+    </button>
+  </div>
+  <div
+    data-radix-popper-content-wrapper=""
+    style="position: fixed; left: 0px; top: 0px; transform: translate3d(0, -200%, 0); min-width: max-content;"
+  >
+    <div
+      class="octo-UI-c-cdrPBc"
+      data-align="center"
+      data-side="top"
+      data-state="instant-open"
+      style="--radix-tooltip-content-transform-origin: var(--radix-popper-transform-origin); --radix-tooltip-content-available-width: var(--radix-popper-available-width); --radix-tooltip-content-available-height: var(--radix-popper-available-height); --radix-tooltip-trigger-width: var(--radix-popper-anchor-width); --radix-tooltip-trigger-height: var(--radix-popper-anchor-height); animation: none;"
+    >
+      <p>
+        Tooltip content
+      </p>
+      <span
+        style="position: absolute; bottom: 0px; transform: translateY(100%); visibility: hidden;"
+      >
+        <svg
+          class="octo-UI-c-cKfwvy"
+          height="5"
+          preserveAspectRatio="none"
+          style="display: block;"
+          viewBox="0 0 30 10"
+          width="10"
+        >
+          <polygon
+            points="0,0 30,0 15,10"
+          />
+        </svg>
+      </span>
+      <span
+        id="radix-:r1:"
+        role="tooltip"
+        style="position: absolute; border: 0px; width: 1px; height: 1px; padding: 0px; margin: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap; word-wrap: normal;"
+      >
+        <p>
+          Tooltip content
+        </p>
+      </span>
+    </div>
+  </div>
+</body>
+`;
