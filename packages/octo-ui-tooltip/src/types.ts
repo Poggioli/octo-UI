@@ -5,7 +5,7 @@ import {
   StyledTooltipPortal,
   StyledTooltipProvider,
   StyledTooltipRoot,
-  StyledTooltipTrigger
+  StyledTooltipTrigger,
 } from "./styles";
 
 export type TooltipProviderProps = HTMLOctoProps<typeof StyledTooltipProvider> &

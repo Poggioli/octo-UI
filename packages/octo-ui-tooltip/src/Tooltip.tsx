@@ -5,7 +5,7 @@ import {
   StyledTooltipPortal,
   StyledTooltipProvider,
   StyledTooltipRoot,
-  StyledTooltipTrigger
+  StyledTooltipTrigger,
 } from "./styles";
 import {
   TooltipArrowProps,
@@ -13,7 +13,7 @@ import {
   TooltipPortalProps,
   TooltipProps,
   TooltipProviderProps,
-  TooltipTriggerProps
+  TooltipTriggerProps,
 } from "./types";
 
 const TooltipProvider = forwardRef<
@@ -123,4 +123,3 @@ export {
   StyledTooltipTrigger,
 };
 export { Tooltip, TooltipTrigger, TooltipContent };
-
