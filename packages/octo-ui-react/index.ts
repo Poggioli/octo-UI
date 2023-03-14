@@ -3,6 +3,7 @@ export * from "@octo-ui/avatar";
 export * from "@octo-ui/badge";
 export * from "@octo-ui/box";
 export * from "@octo-ui/button";
+export * from "@octo-ui/card";
 export * from "@octo-ui/checkbox";
 export * from "@octo-ui/collapsible";
 export * from "@octo-ui/container";

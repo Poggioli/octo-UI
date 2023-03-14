@@ -28,6 +28,7 @@
     "@octo-ui/badge": "*",
     "@octo-ui/box": "*",
     "@octo-ui/button": "*",
+    "@octo-ui/card": "*",
     "@octo-ui/checkbox": "*",
     "@octo-ui/collapsible": "*",
     "@octo-ui/container": "*",
