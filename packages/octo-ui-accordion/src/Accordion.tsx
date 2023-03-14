@@ -1,6 +1,7 @@
 import { forwardRef } from "@octo-ui/core";
 import {
   StyledAccordionContent,
+  StyledAccordionContentBox,
   StyledAccordionHeader,
   StyledAccordionItem,
   StyledAccordionRoot,
@@ -33,47 +34,54 @@ AccordionItem.toString = () => `.${StyledAccordionItem.className}`;
 
 // ========================================================================= //
 
-const AccordionHeader = forwardRef<
-  typeof StyledAccordionHeader,
-  AccordionHeaderProps
->(({ ...props }, forwardedRef) => {
-  return <StyledAccordionHeader {...props} ref={forwardedRef} />;
-});
-AccordionHeader.toString = () => `.${StyledAccordionHeader.className}`;
-
-// ========================================================================= //
-
 const AccordionTrigger = forwardRef<
   typeof StyledAccordionTrigger,
   AccordionTriggerProps
 >(({ ...props }, forwardedRef) => {
   return <StyledAccordionTrigger {...props} ref={forwardedRef} />;
 });
-AccordionTrigger.toString = () => `.${StyledAccordionTrigger.className}`;
+
+// ========================================================================= //
+
+const AccordionHeader = forwardRef<
+  typeof StyledAccordionHeader,
+  AccordionHeaderProps
+>(({ children, ...props }, forwardedRef) => {
+  return (
+    <StyledAccordionHeader {...props} ref={forwardedRef}>
+      <AccordionTrigger>{children}</AccordionTrigger>
+    </StyledAccordionHeader>
+  );
+});
+AccordionHeader.toString = () => `.${StyledAccordionHeader.className}`;
 
 // ========================================================================= //
 
 const AccordionContent = forwardRef<
   typeof StyledAccordionContent,
   AccordionContentProps
->(({ ...props }, forwardedRef) => {
-  return <StyledAccordionContent {...props} ref={forwardedRef} />;
+>(({ children, padded, ...props }, forwardedRef) => {
+  return (
+    <StyledAccordionContent {...props} ref={forwardedRef}>
+      <StyledAccordionContentBox padded={padded}>
+        {children}
+      </StyledAccordionContentBox>
+    </StyledAccordionContent>
+  );
 });
 AccordionContent.toString = () => `.${StyledAccordionContent.className}`;
 
 export {
   StyledAccordionRoot,
   StyledAccordionItem,
-  StyledAccordionHeader,
   StyledAccordionTrigger,
+  StyledAccordionHeader,
   StyledAccordionContent
 };
 export {
   Accordion,
   AccordionItem,
   AccordionHeader,
-  AccordionTrigger,
-  AccordionContent
+  AccordionContent,
 };
-
 

@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Accordion /> GIVEN a <Accordion />
+      WHEN render is called
+      THEN should render a <Accordion /> 1`] = `
+<div>
+  <div
+    class="octo-UI-c-dpBPGy octo-UI-c-dpBPGy-crwvoE-shaded-true octo-UI-c-dpBPGy-bKVAaU-bordered-true"
+    data-orientation="vertical"
+  >
+    <div
+      class="octo-UI-c-dzOJLW"
+      data-disabled=""
+      data-orientation="vertical"
+      data-state="open"
+    >
+      <h3
+        class="octo-UI-c-hxvpuA"
+        data-disabled=""
+        data-orientation="vertical"
+        data-state="open"
+      >
+        <button
+          aria-controls="radix-:r1:"
+          aria-expanded="true"
+          class="octo-UI-c-fxJQfU"
+          data-disabled=""
+          data-orientation="vertical"
+          data-radix-collection-item=""
+          data-state="open"
+          disabled=""
+          id="radix-:r0:"
+          type="button"
+        >
+          Item 1 Header
+        </button>
+      </h3>
+      <div
+        aria-labelledby="radix-:r0:"
+        class="octo-UI-c-iGCJiJ"
+        data-disabled=""
+        data-orientation="vertical"
+        data-state="open"
+        id="radix-:r1:"
+        role="region"
+        style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width); transition-duration: 0s; animation-name: none;"
+      >
+        <div
+          class="octo-UI-c-gqwkJN octo-UI-c-PJLV octo-UI-c-gqwkJN-djZMnX-flexDirection-initial octo-UI-c-gqwkJN-eJbcS-flexWrap-initial octo-UI-c-gqwkJN-fVplCG-justifyContent-initial octo-UI-c-gqwkJN-ebbZJG-alignItems-initial octo-UI-c-gqwkJN-dYGMXV-alignContent-initial octo-UI-c-gqwkJN-bexZoo-alignSelf-initial octo-UI-c-PJLV-iNyvjn-padded-true"
+        >
+          Item 1 Content
+        </div>
+      </div>
+    </div>
+    <div
+      class="octo-UI-c-dzOJLW"
+      data-orientation="vertical"
+      data-state="open"
+    >
+      <h3
+        class="octo-UI-c-hxvpuA"
+        data-orientation="vertical"
+        data-state="open"
+      >
+        <button
+          aria-controls="radix-:r3:"
+          aria-expanded="true"
+          class="octo-UI-c-fxJQfU"
+          data-orientation="vertical"
+          data-radix-collection-item=""
+          data-state="open"
+          id="radix-:r2:"
+          type="button"
+        >
+          Item 2 Header
+        </button>
+      </h3>
+      <div
+        aria-labelledby="radix-:r2:"
+        class="octo-UI-c-iGCJiJ"
+        data-orientation="vertical"
+        data-state="open"
+        id="radix-:r3:"
+        role="region"
+        style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width); transition-duration: 0s; animation-name: none;"
+      >
+        <div
+          class="octo-UI-c-gqwkJN octo-UI-c-PJLV octo-UI-c-gqwkJN-djZMnX-flexDirection-initial octo-UI-c-gqwkJN-eJbcS-flexWrap-initial octo-UI-c-gqwkJN-fVplCG-justifyContent-initial octo-UI-c-gqwkJN-ebbZJG-alignItems-initial octo-UI-c-gqwkJN-dYGMXV-alignContent-initial octo-UI-c-gqwkJN-bexZoo-alignSelf-initial octo-UI-c-PJLV-iNyvjn-padded-true"
+        >
+          Item 2 Content
+        </div>
+      </div>
+    </div>
+    <div
+      class="octo-UI-c-dzOJLW"
+      data-orientation="vertical"
+      data-state="closed"
+    >
+      <h3
+        class="octo-UI-c-hxvpuA"
+        data-orientation="vertical"
+        data-state="closed"
+      >
+        <button
+          aria-controls="radix-:r5:"
+          aria-expanded="false"
+          class="octo-UI-c-fxJQfU"
+          data-orientation="vertical"
+          data-radix-collection-item=""
+          data-state="closed"
+          id="radix-:r4:"
+          type="button"
+        >
+          Item 3 Header
+        </button>
+      </h3>
+      <div
+        aria-labelledby="radix-:r4:"
+        class="octo-UI-c-iGCJiJ"
+        data-orientation="vertical"
+        data-state="closed"
+        hidden=""
+        id="radix-:r5:"
+        role="region"
+        style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
+      />
+    </div>
+    <div
+      class="octo-UI-c-dzOJLW"
+      data-disabled=""
+      data-orientation="vertical"
+      data-state="closed"
+    >
+      <h3
+        class="octo-UI-c-hxvpuA"
+        data-disabled=""
+        data-orientation="vertical"
+        data-state="closed"
+      >
+        <button
+          aria-controls="radix-:r7:"
+          aria-expanded="false"
+          class="octo-UI-c-fxJQfU"
+          data-disabled=""
+          data-orientation="vertical"
+          data-radix-collection-item=""
+          data-state="closed"
+          disabled=""
+          id="radix-:r6:"
+          type="button"
+        >
+          Item 4 Header
+        </button>
+      </h3>
+      <div
+        aria-labelledby="radix-:r6:"
+        class="octo-UI-c-iGCJiJ"
+        data-disabled=""
+        data-orientation="vertical"
+        data-state="closed"
+        hidden=""
+        id="radix-:r7:"
+        role="region"
+        style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
+      />
+    </div>
+  </div>
+</div>
+`;
