@@ -3,7 +3,7 @@ import {
   Accordion,
   AccordionContent,
   AccordionHeader,
-  AccordionItem
+  AccordionItem,
 } from "./Accordion";
 
 describe("<Accordion />", () => {

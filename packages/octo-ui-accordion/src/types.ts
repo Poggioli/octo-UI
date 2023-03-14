@@ -5,7 +5,7 @@ import {
   StyledAccordionHeader,
   StyledAccordionItem,
   StyledAccordionRoot,
-  StyledAccordionTrigger
+  StyledAccordionTrigger,
 } from "./styles";
 
 export type AccordionProps = HTMLOctoProps<typeof StyledAccordionRoot> &
@@ -26,7 +26,8 @@ export type AccordionTriggerProps = HTMLOctoProps<
 // ========================================================================= //
 
 export type AccordionHeaderProps = HTMLOctoProps<typeof StyledAccordionHeader> &
-  OctoVariants<typeof StyledAccordionHeader> & AccordionTriggerProps;
+  OctoVariants<typeof StyledAccordionHeader> &
+  AccordionTriggerProps;
 
 // ========================================================================= //
 

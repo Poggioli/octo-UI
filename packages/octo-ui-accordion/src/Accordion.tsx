@@ -5,14 +5,14 @@ import {
   StyledAccordionHeader,
   StyledAccordionItem,
   StyledAccordionRoot,
-  StyledAccordionTrigger
+  StyledAccordionTrigger,
 } from "./styles";
 import {
   AccordionContentProps,
   AccordionHeaderProps,
   AccordionItemProps,
   AccordionProps,
-  AccordionTriggerProps
+  AccordionTriggerProps,
 } from "./types";
 
 const Accordion = forwardRef<typeof StyledAccordionRoot, AccordionProps>(
@@ -76,12 +76,6 @@ export {
   StyledAccordionItem,
   StyledAccordionTrigger,
   StyledAccordionHeader,
-  StyledAccordionContent
+  StyledAccordionContent,
 };
-export {
-  Accordion,
-  AccordionItem,
-  AccordionHeader,
-  AccordionContent,
-};
-
+export { Accordion, AccordionItem, AccordionHeader, AccordionContent };
