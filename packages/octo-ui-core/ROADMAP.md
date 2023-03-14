@@ -45,7 +45,7 @@
 
 ### Surface components
 
-- Accordion ⚒️
+- Accordion ✅
 - Card
 - Context Menu
 - Dropdown Menu
