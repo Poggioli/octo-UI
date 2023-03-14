@@ -1,3 +1,4 @@
+export * from "@octo-ui/accordion";
 export * from "@octo-ui/avatar";
 export * from "@octo-ui/badge";
 export * from "@octo-ui/box";
@@ -24,3 +25,4 @@ export * from "@octo-ui/text";
 export * from "@octo-ui/title";
 export * from "@octo-ui/toggle-group";
 export * from "@octo-ui/tooltip";
+

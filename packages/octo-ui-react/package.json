@@ -23,6 +23,7 @@
     "@octo-ui/core": "*"
   },
   "dependencies": {
+    "@octo-ui/accordion": "*",
     "@octo-ui/avatar": "*",
     "@octo-ui/badge": "*",
     "@octo-ui/box": "*",
